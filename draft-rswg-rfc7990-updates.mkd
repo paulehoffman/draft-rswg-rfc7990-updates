@@ -46,16 +46,14 @@ Issues can be raised there, but should probably be on the mailing list instead.
 
 # Introduction
 
-{{RFC7990}} defines a framework for how RFCs would be published after that document was published,
-including new formats and a new canonical format for archiving RFCs.
+{{RFC7990}} defines a framework for how RFCs would be published after that document was published, including new formats and a new canonical format for archiving RFCs.
 It talks about "the XML file" as if there will only be one XML file for an RFC because this was the expectation at the time {{RFC7990}} was published.
 
 The first RFC to be published using the group of RFCs described in {{RFC7990}} was {{RFC8651}}, published in October 2019.
 In the time since then, all published RFCs have followed the general plan from {{RFC7990}}.
 
 After extensive experience with publishing RFCs in the XML format, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
-This document updates {{RFC7990}} in that it changes the definition of the canonical format for RFCs
-and lists the purposes which can cause the RFC Editor to change the contents of the XML file.
+This document updates {{RFC7990}} in that it changes the definition of the canonical format for RFCs and lists the purposes which can cause the RFC Editor to change the contents of the XML file.
 This document also specifies how older versions of the XML file for an RFC are archived and made available for historical purposes.
 
 This document explicitly does not update the other documents referenced in {{RFC7990}}.
@@ -80,10 +78,8 @@ canonical format for RFCs; it is the lowest common denominator that
 holds all the information intended for an RFC.
 
 This wording does not take into account the need to later change the XML file to fix XML errors.
-XML format errors, and better design choices, have been discovered by the community since
-the first RFCs were published using the XML format.
-In order to allow the RFC Editor to publish correct XML for all RFCs,
-Section 5 of {{RFC7990}} is updated to say:
+XML format errors, and better design choices, have been discovered by the community since the first RFCs were published using the XML format.
+In order to allow the RFC Editor to publish correct XML for all RFCs, Section 5 of {{RFC7990}} is updated to say:
 
 > The XML file produced by the RFC Editor will be considered the
 canonical format for RFCs; it is the lowest common denominator that
@@ -104,8 +100,7 @@ The canonical XML file can be updated for the following reasons:
 - An error is discovered in the XML for an RFC
 
 During the development of this document, many other reasons for updating the canonical XML file were suggested.
-Those reasons are not in scope for this document, and may be adopted later after the community has experience
-with the updating mechanisms described in this document.
+Those reasons are not in scope for this document, and may be adopted later after the community has experience with the updating mechanisms described in this document.
 
 
 # Updating Publication Format Documents
@@ -117,20 +112,16 @@ When the canonical XML changes, the RFC Editor will also regenerate the publicat
 The RFC Editor might also regenerate one or more of the publication format documents for an RFC if it sees errors in the generated output.
 This has already happened in cases where PDF files had display errors in them.
 
-Whenever the RFC Editor publishes regenerated publication format documents,
-it must keep archived sets of all versions of the publication format documents files.
-These archived sets must be available using the same access methods
-as for the canonical XML and the published publication formats.
+Whenever the RFC Editor publishes regenerated publication format documents, it must keep archived sets of all versions of the publication format documents files.
+These archived sets must be available using the same access methods as for the canonical XML and the published publication formats.
 
 
 # Archived Documents
 
-WHen the RFC Editor archives documents, it does so in a manner that allows them to be found by
-people who want the historical (as compared to current) versions of those files.
+When the RFC Editor archives documents, it does so in a manner that allows them to be found by people who want the historical (as compared to current) versions of those files.
 
 To make the files easier to find, they should be stored in the same Internet-accessable locations as the current RFCs.
-They should be stored in a directory under the directory where the current RFCs are kept
-so that replication of the main directory using rsync or FTP will replicate the archival files as well.
+They should be stored in a directory under the directory where the current RFCs are kept so that replication of the main directory using rsync or FTP will replicate the archival files as well.
 
 The naming of the archival files is a topic perfect for bike-shedding by IETF participants.
 Before this document is finished, hundreds (or thousands!) of messages, many with firm opinions of the best naming method, will be published.
@@ -138,17 +129,12 @@ Heck, even the name of the directory for archival files is fodder for vigorous b
 
 ## An Initial Proposal for File Naming
 
-The file names for archived documents will be appended with a datestamp
-indicating the last day that the file was published as the canonical XML or publication format documents.
-For example, if the XML for RFC 8888 is updated on March 4, 2024,
-the RFC Editor will publish the updated files as
-rfc8888.xml, rfc8888.html, rfc8888.pdf, and rfc8888.txt in the normal locations.
-It will also publish in the archival directory the files
-rfc8888-2024-03-04.xml, rfc8888-2024-03-04.html, rfc8888-2024-03-04.pdf, and rfc8888-2024-03-04.txt.
+The file names for archived documents will be appended with a datestamp indicating the last day that the file was published as the canonical XML or publication format documents.
+For example, if the XML for RFC 8888 is updated on March 4, 2024, the RFC Editor will publish the updated files as rfc8888.xml, rfc8888.html, rfc8888.pdf, and rfc8888.txt in the normal locations.
+It will also publish in the archival directory the files rfc8888-2024-03-04.xml, rfc8888-2024-03-04.html, rfc8888-2024-03-04.pdf, and rfc8888-2024-03-04.txt.
 
 The same naming scheme is used when just a publication format document is published.
-For example, if the PDF of RFC 9432 had rendering issues that the RFC Editor fixes on January 8, 2024,
-the RFC Editor will publish tne updated file as rfc9432.pdf.
+For example, if the PDF of RFC 9432 had rendering issues that the RFC Editor fixes on January 8, 2024, the RFC Editor will publish tne updated file as rfc9432.pdf.
 It will also publish in the archival directory the file rfc9432-2023-01-08.pdf.
 
 ## Explaining Reasons for Updating Files
@@ -176,12 +162,12 @@ This document has no IANA considerations.
 
 This document has the same security considerations as {{RFC7990}}. Those are:
 
-Changing the format for RFCs involves modifying a great number of
-components to publication.  Understanding those changes and the
-implications for the entire tool chain is critical so as to avoid
-unintended bugs that would allow unintended changes to text.
-Unintended changes to text could in turn corrupt a standard,
-practice, or critical piece of information about a protocol.
+Changing the format for RFCs involves modifying a great number of components to publication.
+Understanding those changes and the implications for the entire tool chain is critical so as to avoid unintended bugs that would allow unintended changes to text.
+Unintended changes to text could in turn corrupt a standard, practice, or critical piece of information about a protocol.
 
+# Acknowledegements
+
+This document has greatly benefitted from the input or the RSWG.
 
 --- back
