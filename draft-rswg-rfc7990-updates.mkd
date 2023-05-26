@@ -54,7 +54,7 @@ In the time since then, all published RFCs have followed the general plan from {
 
 After extensive experience with publishing RFCs in the XML format, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
 This document updates {{RFC7990}} in that it changes the definition of the canonical format for RFCs and lists the purposes which can cause the RFC Editor to change the contents of the XML file.
-This document also specifies how older versions of the XML file for an RFC are archived and made available for historical purposes.
+This document also specifies that older versions of the XML file for an RFC are archived and made available for historical purposes.
 
 This document explicitly does not update the other documents referenced in {{RFC7990}}.
 
@@ -86,6 +86,11 @@ canonical format for RFCs; it is the lowest common denominator that
 holds all the information intended for an RFC. The RFC Editor may
 change the file over time to incorporate changes in the XML format.
 
+<!--
+The XML file produced by the RFC Editor is the canonical format for RFCs; it is the format that holds all the information intended for an RFC.
+The RFC Editor may change the file over time to incorporate changes in the definition of the XML format.
+-->
+
 > The RFC Editor must keep archived sets of all versions of the
 XML file for an RFC and the published publication formats (HTML, PDF,
 and plain text) that were published.
@@ -96,7 +101,7 @@ as for the canonical XML and the published publication formats.
 
 The canonical XML file can be updated for the following reasons:
 
-- The XML vocabulary in {{RFC7991}} changes
+- The XML vocabulary, originally defined in {{RFC7991}}, changes
 - An error is discovered in the XML for an RFC
 
 During the development of this document, many other reasons for updating the canonical XML file were suggested.
@@ -114,18 +119,15 @@ This has already happened in cases where PDF files had display errors in them.
 
 Whenever the RFC Editor publishes regenerated publication format documents, it must keep archived sets of all versions of the publication format documents files.
 These archived sets must be available using the same access methods as for the canonical XML and the published publication formats.
+<!-- Martin T doesn't like this. -->
 
 
 # Archived Documents
 
 When the RFC Editor archives documents, it does so in a manner that allows them to be found by people who want the historical (as compared to current) versions of those files.
 
-To make the files easier to find, they should be stored in the same Internet-accessable locations as the current RFCs.
-They should be stored in a directory under the directory where the current RFCs are kept so that replication of the main directory using rsync or FTP will replicate the archival files as well.
-
-The naming of the archival files is a topic perfect for bike-shedding by IETF participants.
-Before this document is finished, hundreds (or thousands!) of messages, many with firm opinions of the best naming method, will be published.
-Heck, even the name of the directory for archival files is fodder for vigorous bike-shedding.
+To make the files easier to find, they should be stored in the same Internet-accessible locations as the current RFCs.
+The methods for storage and access will be determined by the RFC Editor in consultation with the technical community.
 
 ## An Initial Proposal for File Naming
 
@@ -169,5 +171,8 @@ Unintended changes to text could in turn corrupt a standard, practice, or critic
 # Acknowledegements
 
 This document has greatly benefitted from the input or the RSWG.
+In particular,
+Martin Thomson
+gave significant input on the early draft of this document.
 
 --- back
