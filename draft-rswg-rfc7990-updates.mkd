@@ -37,6 +37,10 @@ informative:
 This document updates RFC 7990 by changing the definition of the "canonical format" for RFCs
 and describing the archival versions of RFCs in more depth.
 
+This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
+There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
+Issues can be raised there, but should probably be on the mailing list instead.
+
 
 --- middle
 
