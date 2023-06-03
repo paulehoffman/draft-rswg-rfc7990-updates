@@ -39,7 +39,7 @@ and describing the archival versions of RFCs in more depth.
 
 This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
 There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
-Issues can be raised there, but should probably be on the mailing list instead.
+Issues can be raised there, but probably should be on the mailing list instead.
 
 
 --- middle
@@ -58,7 +58,7 @@ This document also specifies that older versions of the XML file for an RFC are 
 
 This document explicitly does not update the other documents referenced in {{RFC7990}}.
 
-\[\[ Jay Daley would like to use RFCXML not just XML as we are describing a very specific XML language that is used. \]\]
+\[\[ Jay Daley would like to use "RFCXML" instead of "XML" because we are describing a very specific XML language that is used. \]\]
 
 
 
@@ -94,10 +94,10 @@ These archived sets must be available using the same access methods as for the X
 
 ## Reasons for Updating the XML Files
 
-The XML file can be updated for the following reasons:
+The XML file can be updated for the following limited reasons:
 
 - The XML vocabulary, originally defined in {{RFC7991}}, changes
-- An error is discovered in the format XML for an RFC (not the content)
+- An error is discovered in the format XML for an RFC
 
 During the development of this document, many other reasons for updating the XML file were suggested.
 Those reasons are not in scope for this document, and may be adopted later after the community has experience with the updating mechanisms described in this document.
@@ -127,7 +127,7 @@ To make the files easier to find, they should be stored in the same Internet-acc
 The methods for storage and access will be determined by the RFC Editor in consultation with the technical community.
 
 The naming of the archival files is a topic perfect for bike-shedding by IETF participants.
-Before this document is finished, hundreds (or thousands!) of messages, many with firm opinions of the best naming method, will be published.
+Before this document is finished, hundreds (or thousands!) of messages, many with firm opinions of the best naming method, might be published.
 Heck, even the name of the directory for archival files is fodder for vigorous bike-shedding.
 
 ## An Initial Proposal for File Naming
@@ -145,7 +145,7 @@ It will also publish the file rfc9432-2023-01-08.pdf.
 During the development of this document, members of the community said that the archived XML should contain an explanation for why the document was updated.
 Some suggested methods include:
 
-- An XML comment in the document; except for the fact that {{RFC7990}} prohibits XML comments.
+- An XML comment in the document; however, {{RFC7990}} prohibits XML comments
 
 - A new element such as &lt;comment&gt; this would require an update to {{RFC7991}}
 
@@ -153,7 +153,9 @@ Some suggested methods include:
 
 - An additional file in the archival directory; this would require the reader to find the file when looking at the XML
 
-Because each of these has a downside, choosing between them is not bike-shedding.
+Because each of these has one or more downsides, choosing between them is not bike-shedding.
+
+\[\[ Martin T. expressed a preference for XML comments. \]\]
 
 
 # IANA Considerations
