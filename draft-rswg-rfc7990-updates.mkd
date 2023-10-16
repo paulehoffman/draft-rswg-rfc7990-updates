@@ -144,6 +144,10 @@ The XML file can be updated for the following limited reasons:
 - The XML vocabulary, originally defined in {{RFC7991}}, changes
 - An error is discovered in the format XML for an RFC
 
+Existing RFCs can be updated to use the new format.
+The RFC that describes format changes can also describe how the XML of existing RFCs will be updated.
+The intent behind limiting changes to syntax and XML errors is that the goal is to preserve the semantic meaning encoded in the RFC XML document.
+
 During the development of this document, many other reasons for updating the XML file were suggested.
 Those reasons are not in scope for this document, and may be adopted later after the community has experience with the updating mechanisms described in this document.
 
