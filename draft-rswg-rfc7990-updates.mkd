@@ -107,6 +107,11 @@ Every archived set shall record the date that a document was created or revised.
 
 > This document does not specify how archives are maintained or how archived RFC might be located or identified.
 
+\[\[\[
+The paragraphs immediately above specifies policy for updating publication formats.
+There is not yet consensus in the RSWG about whether that should or should not be policy.
+\]\]\]
+
 
 # Rationale
 
