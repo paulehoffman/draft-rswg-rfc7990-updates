@@ -1,7 +1,7 @@
 ---
 title: Updated RFC Format Framework
 abbrev: Format Framework
-docname: draft-rswg-rfc7990-updates-00
+docname: draft-rswg-rfc7990-updates-01
 
 stand_alone: true
 v: 3
@@ -38,6 +38,8 @@ informative:
 This document updates RFC 7990 by changing the word "canonical" to "definitive" and defining what it means to the series.
 It also updates RFC 7990 by defining the relationship of the publication formats to the series and the expectation of archiving both the definitive and publication formats of RFCs.
 A policy governing how the RFCXML format changes is described.
+
+An open question for the RSWG is whether this document should be an update patch to RFC 7990 (which is the current form of the document) or a complete rewrite done to obsolete RFC 7990.
 
 This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
 There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
@@ -101,6 +103,11 @@ Every archived set shall record the date that a document was created or revised.
 
 > This document does not specify how archives are maintained or how archived RFC might be located or identified.
 
+\[\[\[
+The paragraphs immediately above specifies policy for updating publication formats.
+There is not yet consensus in the RSWG about whether that should or should not be policy.
+\]\]\]
+
 
 # Rationale
 
@@ -138,6 +145,15 @@ The XML file can be updated for the following limited reasons:
 - The XML vocabulary, originally defined in {{RFC7991}}, changes
 - An error is discovered in the format XML for an RFC
 
+Existing RFCs can be updated to use the new format.
+The RFC that describes format changes can also describe how the XML of existing RFCs will be updated.
+The intent behind limiting changes to syntax and XML errors is that the goal is to preserve the semantic meaning encoded in the RFC XML document.
+
+\[\[\[
+The above sets a new policy.
+Another option is to say that the policy will be set later.
+\]\]\]
+
 During the development of this document, many other reasons for updating the XML file were suggested.
 Those reasons are not in scope for this document, and may be adopted later after the community has experience with the updating mechanisms described in this document.
 
@@ -146,22 +162,8 @@ Those reasons are not in scope for this document, and may be adopted later after
 
 When the RFC Editor archives documents, it does so in a manner that allows them to be found by people who want the historical (as compared to current) versions of those files.
 
-To make the files easier to find, they should be stored in the same Internet-accessible locations as the current RFCs.
+This document does not specify how archives are maintained or how archived RFC XML might be located or identified.
 The methods for storage and access will be determined by the RFC Editor in consultation with the technical community.
-
-The naming of the archival files is a topic perfect for bike-shedding by IETF participants.
-Before this document is finished, hundreds (or thousands!) of messages, many with firm opinions of the best naming method, might be published.
-Heck, even the name of the directory for archival files is fodder for vigorous bike-shedding.
-
-## An Initial Proposal for File Naming
-
-The file names for archived documents will be appended with a datestamp indicating the last day that the file was published as the XML or publication format documents.
-For example, if the XML for RFC 8888 is updated on March 4, 2024, the RFC Editor will publish the updated files as rfc8888.xml, rfc8888.html, rfc8888.pdf, and rfc8888.txt in the normal locations.
-It will also publish the files rfc8888-2024-03-04.xml, rfc8888-2024-03-04.html, rfc8888-2024-03-04.pdf, and rfc8888-2024-03-04.txt.
-
-The same naming scheme is used when just a publication format document is published.
-For example, if the PDF of RFC 9432 had rendering issues that the RFC Editor fixes on January 8, 2024, the RFC Editor will publish tne updated file as rfc9432.pdf.
-It will also publish the file rfc9432-2023-01-08.pdf.
 
 
 # IANA Considerations
