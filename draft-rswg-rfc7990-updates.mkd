@@ -24,10 +24,6 @@ author:
    name: Paul Hoffman
    org: ICANN
    email: paul.hoffman@icann.org
- -
-   fullname: Martin Thomson
-   organization: Mozilla
-   email: mt@lowentropy.net
 
 normative:
   RFC7990:
@@ -177,7 +173,7 @@ This document has no IANA considerations.
 
 This document has the same security considerations as {{RFC7990}}. Those are:
 
-Changing the format for RFCs involves modifying a great number of components to publication.
+> Changing the format for RFCs involves modifying a great number of components to publication.
 Understanding those changes and the implications for the entire tool chain is critical so as to avoid unintended bugs that would allow unintended changes to text.
 Unintended changes to text could in turn corrupt a standard, practice, or critical piece of information about a protocol.
 
@@ -186,6 +182,8 @@ Changes to content that has security implications would have security-relevant c
 
 
 # Acknowledgments
+
+Martin Thomson wrote a great deal of the significant text here as part of draft-thomson-rswg-syntax-change.
 
 This document has greatly benefitted from the input or the RSWG.
 In particular,
