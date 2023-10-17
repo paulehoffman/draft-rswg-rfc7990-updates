@@ -24,6 +24,10 @@ author:
    name: Paul Hoffman
    org: ICANN
    email: paul.hoffman@icann.org
+ -
+   fullname: Martin Thomson
+   organization: Mozilla
+   email: mt@lowentropy.net
 
 normative:
   RFC7990:
@@ -31,11 +35,13 @@ normative:
 
 informative:
   RFC8651:
+  RFC9280:
 
 --- abstract
 
-This document updates RFC 7990 by changing the definition of the "canonical format" for RFCs
-and describing the archival versions of RFCs in more depth.
+This document updates RFC 7990 by changing the word "canonical" to "definitive" and defining what it means to the series.
+It also updates RFC 7990 by defining the relationship of the publication formats to the series and the expectation of archiving both the definitive and publication formats of RFCs.
+A policy governing how the RFCXML format changes is described.
 
 This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
 There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
@@ -46,51 +52,88 @@ Issues can be raised there, but probably should be on the mailing list instead.
 
 # Introduction
 
-{{RFC7990}} defines a framework for how RFCs would be published after that document was published, including new formats and a new canonical format for archiving RFCs.
+{{RFC7990}} defines a framework for how RFCs would be published after that document was published, including new formats and a new "canonical format" for archiving RFCs.
 It talks about "the XML file" as if there will only be one XML file for an RFC because this was the expectation at the time {{RFC7990}} was published.
+It also talks about "publication formats" as the versions of HTML, text, and PDF versions derived from the canonical format.
 
 The first RFC to be published using the group of RFCs described in {{RFC7990}} was {{RFC8651}}, published in October 2019.
 In the time since then, all published RFCs have followed the general plan from {{RFC7990}}.
 
-After extensive experience with publishing RFCs in the XML format, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
-This document updates {{RFC7990}} in that it changes the definition of the canonical format for RFCs and lists the purposes which can cause the RFC Editor to change the contents of the XML file.
-This document also specifies that older versions of the XML file for an RFC are archived and made available for historical purposes.
+After extensive experience with publishing RFCs in the RFCXML format (defined in {{RFC7991}}, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
+This document updates {{RFC7990}} in a few significant ways:
+
+- It changes the phrase "canonical format" to "definitive version" and defines the use of the definitive version in the series.
+- It changes the phrase "publication format" to "publication versions" and defines the use of the publication versions in the series.
+- It defines a policy governing how the RFCXML format changes.
+- It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
+- It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
 
 This document explicitly does not update the other documents referenced in {{RFC7990}}.
-
-\[\[ Jay Daley would like to use "RFCXML" instead of "XML" because we are describing a very specific XML language that is used. \]\]
-
 
 
 # Updated Definition of "Canonical Format" and "Archive"
 
 Section 3 of {{RFC7990}} defines the canonical format as:
 
-> Canonical format: the authorized, recognized, accepted, and
-archived version of the document
+> Canonical format: the authorized, recognized, accepted, and archived version of the document
 
-The definition of "canonical format" in Section 3 of {{RFC7990}} is updated to be:
+This paragraph in {{RFC7990}} is replaced with:
 
-> Canonical format: the authorized, recognized, accepted, and
-most recent version of the document published by the RFC Editor
-
-\[\[ Another option: the XML document published by the RFC Editor in the most recent version of the XML format \]\]
+> Definitive version: the authorized, recognized, accepted, and most recent version of the document published by the RFC Editor
 
 Section 5 of {{RFC7990}} says:
 
-> The final XML file produced by the RFC Editor will be considered the
-canonical format for RFCs; it is the lowest common denominator that
-holds all the information intended for an RFC.
+> The final XML file produced by the RFC Editor will be considered the canonical format for RFCs; it is the lowest common denominator that holds all the information intended for an RFC.
 
-This wording does not take into account the need to later change the XML file to fix XML errors.
-XML format errors, and better design choices, have been discovered by the community since the first RFCs were published using the XML format.
-In order to allow the RFC Editor to publish corrected XML for all RFCs, Section 5 of {{RFC7990}} is updated to say:
+This wording does not take into account later changes to the definitive version. 
+As noted in {{Section 10.2 of RFC7990}}, "publication formats may be republished as needed".
+XML format errors, and better design choices, have been discovered by the community since the first RFCs were published using the RFCXML format.
 
-> The XML file produced by the RFC Editor is the canonical format for RFCs; it is the format that holds all the information intended for an RFC.
-The RFC Editor may change the file over time to incorporate changes in the definition of the XML format.
+As the RFC XML format of a document changes, publication formats can change, even if this might not result in observable differences.
+Similarly, as production tools change, publication formats can be regenerated to ensure a consistent presentation across the series.
 
-> The RFC Editor must keep archived sets of all renderings of the XML file for an RFC and the derived publication formats (HTML, PDF, and plain text) that were published.
+Publication formats and the contexts in which they are displayed can optionally provide additional details of the specific RFCXML version that they were generated from, or provide a means to discover alternative renderings.
+
+In order to allow the RFC Editor to publish new definitive versions and associated publication versions of RFCs, Section 5 of {{RFC7990}} is replaced with:
+
+> The definitive version produced by the RFC Editor is the version that holds all the information intended for an RFC.
+The RFC Editor may change the definitive version of an RFC over time to incorporate changes in the RFCXML format.
+
+> The RFC Editor will keep archived set of all definitive versions of RFCs as well as archived sets of the publication versions for an RFC that were published.
 These archived sets must be available using the same access methods as for the XML and the published publication formats.
+Every archived set shall record the date that a document was created or revised.
+
+> This document does not specify how archives are maintained or how archived RFC might be located or identified.
+
+
+# Rationale
+
+The format for published RFCs is RFCXML {{RFC7990}}.  Historically, the published version of an RFC has been immutable.
+{{Section 7.6 of RFC9280}} says "Once published, RFC Series documents are not changed."
+
+The RFCXML format {{RFC7991}} is not able to address use cases that were not originally anticipated during its design.
+It might also be possible to improve the format to better capture meaning.
+
+Though it might be possible to evolve the format and only use the new format for the publication of new RFCs, this would mean that there would be no single format across the series. 
+Tools that seek to process RFCXML would need to understand all iterations of the format.
+
+# Syntax Change Policy
+
+The RFC Series Working Group (RSWG), constituted by {{RFC9280}}, acts as custodian for the RFCXML format.
+If the RSWG reaches consensus, they can propose a revision to {{RFC7991}}.
+
+The RSWG can publish RFCs in the Editorial stream that describe how the RFCXML format changes.
+An updated XML format is used for the publication of new RFCs.
+Some time after the publication of an update to {{RFC7991}} might be necessary to implement changes in tools and active documents.
+
+Existing RFCs can be updated to use the new format. 
+The RFC that describes format changes can also describe how the XML of existing RFCs could be updated.
+
+Updates to the RFCXML format that are applied to existing RFCs should preserve to the greatest extent possible the semantics expressed in the original RFC.
+The goal of limiting changes only to syntax is to preserve the semantic meaning encoded in the RFC XML document.
+
+This process does not require that updates to RFCXML avoid all risk of introducing semantic changes to existing RFCs.
+Instead, it only requires that the RSWG carefully consider the potential for semantic changes, take steps to understand the risk of a semantic change (either deliberate or inadvertent), and to limit those risks.
 
 ## Reasons for Updating the XML Files
 
@@ -101,22 +144,6 @@ The XML file can be updated for the following limited reasons:
 
 During the development of this document, many other reasons for updating the XML file were suggested.
 Those reasons are not in scope for this document, and may be adopted later after the community has experience with the updating mechanisms described in this document.
-
-
-# Updating Publication Format Documents
-
-Section 7 of {{RFC7990}} describes the HTML, PDF, and plain text versions of an RFC that are published by the RFC Editor.
-The section is titled "Publication Format Documents", so that term is used here to refer to the documents that are derived from the XML for an RFC.
-When the XML changes, the RFC Editor may also regenerate the publication format documents and publish those new versions.
-
-Whenever the RFC Editor publishes regenerated publication format documents, it must keep archived sets of all versions of the publication format documents files.
-These archived sets must be available using the same access methods as for the XML and the published publication formats.
-
-\[\[ There was disagreement about the paragraph above about "must" and deciding when the publication format files are archived. \]\]
-
-(Separately, the RFC Editor might also regenerate one or more of the publication format documents for an RFC if it sees errors in the generated output.
-This has already happened in cases where PDF files had display errors in them.
-Such regeneration is an operational decision that is not affected by this document.)
 
 
 # Archived Documents
@@ -140,23 +167,6 @@ The same naming scheme is used when just a publication format document is publis
 For example, if the PDF of RFC 9432 had rendering issues that the RFC Editor fixes on January 8, 2024, the RFC Editor will publish tne updated file as rfc9432.pdf.
 It will also publish the file rfc9432-2023-01-08.pdf.
 
-## Explaining Reasons for Updating Files
-
-During the development of this document, members of the community said that the archived XML should contain an explanation for why the document was updated.
-Some suggested methods include:
-
-- An XML comment in the document; however, {{RFC7990}} prohibits XML comments
-
-- A new element such as &lt;comment&gt; this would require an update to {{RFC7991}}
-
-- A &lt;cref&gt; element with a new attribute that would suppress inclusion in the publication format documents; this would require an update to {{RFC7991}}
-
-- An additional file in the archival directory; this would require the reader to find the file when looking at the XML
-
-Because each of these has one or more downsides, choosing between them is not bike-shedding.
-
-\[\[ Martin T. expressed a preference for XML comments. \]\]
-
 
 # IANA Considerations
 
@@ -171,14 +181,48 @@ Changing the format for RFCs involves modifying a great number of components to 
 Understanding those changes and the implications for the entire tool chain is critical so as to avoid unintended bugs that would allow unintended changes to text.
 Unintended changes to text could in turn corrupt a standard, practice, or critical piece of information about a protocol.
 
-# Acknowledegements
+The RSWG are responsible for managing the risk of semantic changes that would affect the interpretation of existing and future RFCs.
+Changes to content that has security implications would have security-relevant consequences.
+
+
+# Acknowledgments
 
 This document has greatly benefitted from the input or the RSWG.
 In particular,
+Alexis Rossi,
 Brian Carpenter,
+Eliot Lear,
 Jay Daley,
-and Martin Thomson
-gave significant input on the early draft of this document.
+John Levine,
+and Pete Resnick,
+gave significant input on the early drafts of this document.
 
 --- back
 
+# Advice on Regenerating Publication Formats
+
+This document does not include specific guidance regarding the generation of publication formats from the RFCXML source for the definitive version of an RFC.
+Decisions about how to maintain publication formats are not a matter governed by policy as specified in {{RFC9280}}.
+This appendix contains advice and considerations for the process of regeneration that came out of discussions of the policy changes in this document.
+
+Changes to the RFCXML for existing RFCs might result in changes to the documents rendered from that XML.
+At the same time, the tools used to generate renderings are under active maintenance.
+Making it possible for a fresh rendering to replace existing publication formats is a goal supported by the policy changes in this document.
+
+This creates a risk that a rerendered documents change in unexpected ways when they are regenerated.
+This risk of unintentional change can be managed by implementing validation processes:
+
+- Tools can be continuously checked by producing renderings for existing RFCs.
+Any change in the rendered document can then be compared with previous outputs and validated.
+This will ensure that changes in tooling are deliberate and understood.
+
+- When a change to the XML format occurs, rendered documents can be regenerated and any change in the rendering can be validated.
+
+Validation should be aided by automated tooling that is able to disregard inconsequential changes in renderings, like changes in timestamps and other annotations.
+Validation of tooling can be continuous, for which automation is essential.
+
+The decision to make renderings available as the publication format for an RFC is a decision that can be made on a case-by-case basis.
+Making fresh renderings available more often could mean a greater risk that people seeking to read RFCs will obtain a copy that contains accidental errors.
+However, errors in publication formats might persist if they are not replaced as tool quality and reliability improves.
+
+Old copies of replaced publication formats will be retained to provide the ability to isolate changes and understand the evolution of documents.
