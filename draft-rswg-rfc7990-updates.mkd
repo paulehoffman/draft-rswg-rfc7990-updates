@@ -71,7 +71,7 @@ This document explicitly does not update the other documents referenced in {{RFC
 
 # Updated Definition of "Canonical Format" and "Archive"
 
-Section 3 of {{RFC7990}} defines the canonical format as:
+{{Section 3 of RFC7990}} defines the canonical format as:
 
 > Canonical format: the authorized, recognized, accepted, and archived version of the document
 
@@ -79,7 +79,7 @@ This paragraph in {{RFC7990}} is replaced with:
 
 > Definitive version: the authorized, recognized, accepted, and most recent version of the document published by the RFC Editor
 
-Section 5 of {{RFC7990}} says:
+{{Section 5 of RFC7990}} says:
 
 > The final XML file produced by the RFC Editor will be considered the canonical format for RFCs; it is the lowest common denominator that holds all the information intended for an RFC.
 
@@ -92,7 +92,7 @@ Similarly, as production tools change, publication formats can be regenerated to
 
 Publication formats and the contexts in which they are displayed can optionally provide additional details of the specific RFCXML version that they were generated from, or provide a means to discover alternative renderings.
 
-In order to allow the RFC Editor to publish new definitive versions and associated publication versions of RFCs, Section 5 of {{RFC7990}} is replaced with:
+In order to allow the RFC Editor to publish new definitive versions and associated publication versions of RFCs, {{Section 5 of RFC7990}} is replaced with:
 
 > The definitive version produced by the RFC Editor is the version that holds all the information intended for an RFC.
 The RFC Editor may change the definitive version of an RFC over time to incorporate changes in the RFCXML format.
