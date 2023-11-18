@@ -5,18 +5,12 @@ docname: draft-rswg-rfc7990-updates-01
 
 stand_alone: true
 v: 3
-updates: 7990
+obsoletes: 7990
 
 ipr: trust200902
 kw: Internet-Draft
 cat: info
 submissionType: editorial
-
-pi:
-  toc: yes
-  tocdepth: 4
-  sortrefs: yes
-  symrefs: yes
 
 author:
  -
@@ -24,22 +18,35 @@ author:
    name: Paul Hoffman
    org: ICANN
    email: paul.hoffman@icann.org
+ -
+   ins: H. Flanagan
+   name: Heather Flanagan
+   org: Spherical Cow Consulting
+   email: hlf@sphericalcowconsulting.com
 
 normative:
   RFC7990:
   RFC7991:
+  RFC7992:
+  RFC7993:
+  RFC7994:
+  RFC7995:
+  RFC7996:
+  RFC7997:
 
 informative:
+  RFC20:
+  RFC6949:
   RFC8651:
   RFC9280:
 
 --- abstract
 
-This document updates RFC 7990 by changing the word "canonical" to "definitive" and defining what it means to the series.
-It also updates RFC 7990 by defining the relationship of the publication formats to the series and the expectation of archiving both the definitive and publication formats of RFCs.
-A policy governing how the RFCXML format changes is described.
+In order to improve the readability of RFCs while supporting their archivability, the canonical format of the RFC Series has transitioned from plain-text ASCII to XML using the RFCXML vocabulary; different publication formats arerendered from that base document.
+These changes caused an increase in complexity for authors and the publisher of RFCs.
+This document is the framework that provides the problem statement, lays out a road map of the documents that capture the specific requirements, and describes how RFCs are published.
 
-An open question for the RSWG is whether this document should be an update patch to RFC 7990 (which is the current form of the document) or a complete rewrite done to obsolete RFC 7990.
+This document updates RFC 7990 in many ways. Some of the significant updates are changing the word "canonical" to "definitive" and defining what it means to the series; defining the relationship of the publication formats to the series; defining a policy governing how published RFCs can be updated while keeping the same RFC number; and specifying expectations around archiving and updating the definitive and publication formats of RFCs.
 
 This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
 There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
@@ -50,7 +57,22 @@ Issues can be raised there, but probably should be on the mailing list instead.
 
 # Introduction
 
-{{RFC7990}} defines a framework for how RFCs would be published after that document was published, including new formats and a new "canonical format" for archiving RFCs.
+"RFC Series Format Requirements and Future Development" {{RFC6949}} discusses the need to improve the display of items such as author names and artwork in RFCs as well as the need to improve the ability of RFCs to be displayed properly on various devices.
+Based on the discussions with communities of interest, such as the IETF, the RFC Series Editor decided to explore a change to the format of the Series.
+This document serves as the framework that describes the problems that were solved and summarizes the documents created to date that capture the specific requirements for each aspect of the change in format.
+
+This document is concerned with the production of RFCs, focusing on the published formats.
+It does not address any changes to the processes each stream uses to develop and review their submissions (specifically, how Internet-Drafts will be developed).
+While I-Ds have a similar set of issues and concerns, directly addressing those issues for I-Ds will be discussed within each document stream.
+
+The details described in this document are expected to change based on experience gained in implementing the new publication toolsets, just as the details in {{RFC7990}} changed after publication.
+Revised documents will be published capturing those changes as the toolsets are completed.
+Other implementers must not expect those changes to remain backwards compatible with the details described in this document.
+
+
+## Changes to RFC 7990
+
+{{RFC7990}} defined a framework for how RFCs would be published after that document was published, including new formats and a new "canonical format" for archiving RFCs.
 It talks about "the XML file" as if there will only be one XML file for an RFC because this was the expectation at the time {{RFC7990}} was published.
 It also talks about "publication formats" as the versions of HTML, text, and PDF versions derived from the canonical format.
 
@@ -62,13 +84,147 @@ This document updates {{RFC7990}} in a few significant ways:
 
 - It changes the phrase "canonical format" to "definitive version" and defines the use of the definitive version in the series.
 - It changes the phrase "publication format" to "publication versions" and defines the use of the publication versions in the series.
+- It changes the phrase "xml2rfc version 3" to "RFCXML".
 - It defines a policy governing how the RFCXML format changes.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
 
-This document explicitly does not update the other documents referenced in {{RFC7990}}.
+Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
+
+# Terminology
+
+This document uses terminology from RFC 6949, repeated below for convenience.
+
+ASCII:
+: Coded Character Set - 7-bit American Standard Code forInformation Interchange, ANSI X3.4-1986 {{RFC20}}
+
+Canonical format:
+: the authorized, recognized, accepted, and archived version of the document
+
+Metadata:
+: information associated with a document so as to provide, for example, definitions of its structure, or of elements within the document such as its topic or author
+
+Publication format:
+: display and distribution format as it may be read or printed after the publication process has completed
+
+Reflowable text:
+: text that automatically wraps to the next line in a document as the user moves the margins of the text, either by resizing the window or changing the font size
+
+Revisable format:
+: the format that will provide the information for conversion into a Publication format; it is used or created by the RFC Editor
+
+Submission format:
+: the format submitted to the RFC Editor for editorial revision and publication
+
+# Key Changes from the Earlier RFC Process
+
+At the highest level, the changes that were made to the RFC format involve breaking away from solely ASCII plain text and moving to a canonical format that includes all the information required for rendering a document into a wide variety of publication formats.
+The RFC Editor became responsible for more than just the plain-text file and the PDF-from-text format created at time of publication; the RFC Editor now creates several different formats in order to meet the diverse requirements of the community.
+
+The final XML file produced by the RFC Editor is the canonical format for RFCs; it is the lowest common denominator that holds all the information intended for an RFC.
+PDF/A-3 is the publication format offered in response to subpoenas for RFCs published through this new process and will be developed with an eye towards long-term archival storage.
+HTML is the focus of providing the most flexible set of features for an RFC, including JavaScript to provide pointers to errata and other metadata.
+Plain text will continue to be offered in order to support existing tool chains, where practicable, and the individuals who prefer to read RFCs in this format.
 
 
+# Canonical Format Documents
+
+The canonical format for RFCs is XML using the XMLRFC vocabulary described in {{RFC7991}}.
+See {{RFC7991}} for the complete description of the XMLRFC syntax and semantics.
+
+The XML may contain SVG line art, as described in {{RFC7996}}.
+That SVG will also appear in the HTML and PDF publication formats.
+
+The XML may contain non-ASCII charaters, as described in {{RFC7997}}.
+These characters will appear in all the publication formats.
+
+The XML file will not contain any XMLRFC vocabulary elements or attributes that have been marked deprecated.
+
+Authors may submit documents using the xml2rfc v2 vocabulary, but the final publication will be converted to use the XMLRFC vocabulary.
+
+The published XML file must contain all information necessary to render a variety of formats; any question about what was intended in the publication will be answered from this file.
+It is self-contained with all the information known at publication time.
+For instance, all features that reference externally defined input are expanded.
+It does not contain src attributes for &lt;artwork> or &lt;sourcecode> elements.
+It  does not contain comments or processing instructions.
+
+
+# Publication Format Documents
+
+## HTML
+
+{{RFC7992}} describes the semantic HTML produced by the RFC Editor from the XMLRFC files.
+The HTML file is rendered from the XML file; it is not derived from the plain-text publication format.
+The body of the document uses a subset of HTML.
+
+The documents include Cascading Style Sheets (CSS) for default visual presentation; the CSS can be overwritten by a local CSS file.
+THe allowed CSS is described in {{RFC7993}}.
+
+JavaScript is supported on a limited basis.
+It is not be permitted to overwrite or change any text present in the rendered HTML.
+It may, on a limited basis, add text that provides post-publication metadata or pointers, if warranted. 
+All such text is clearly marked as additional.
+
+## PDF
+
+{{RFC7995}} describes the tags and profiles that are used to create the new PDF format, including both the internal structure and the visible layout of the file.
+A review of the different versions of PDF is offered, with a recommendation of what PDF standard should apply to RFCs.
+
+The PDF file is rendered from the XML file; it is not derived from the plain-text publication format.
+
+The PDF publication format conforms to the PDF/A-3 standard and embeds the canonical XML source.
+
+The PDF looks more like the HTML publication format than the plain-text publication format.
+The PDF includes a rich set of tags and metadata within the document.
+
+## Plain Text
+
+{{RFC7994}} describes the details of the plain-text format; in particular, it focuses on what changed from the earlier plain-text format for publishing RFCs.
+
+The plain-text format is UTF-8 encoded, and non-ASCII characters are allowed.
+A Byte Order Mark (BOM) is added at the start of each plain-text file.
+
+The plain-text file is unpaginated.
+Running headers and footers are not be used in the plain-text file.
+
+Authors may choose to have pointers to line art in other publication formats in place of ASCII art in the plain-text file.
+
+
+# IANA Considerations
+
+This document has no IANA considerations.
+
+
+# Security Considerations
+
+Changing the format for RFCs involves modifying a great number of components to publication.
+Understanding those changes and the implications for the entire tool chain is critical so as to avoid unintended bugs that would allow unintended changes to text.
+Unintended changes to text could in turn corrupt a standard, practice, or critical piece of information about a protocol.
+
+The RSWG is responsible for managing the risk of semantic changes that would affect the interpretation of existing and future RFCs.
+Changes to content that has security implications would have security-relevant consequences.
+
+
+# Acknowledgments
+
+Martin Thomson wrote a great deal of the significant text here as part of draft-thomson-rswg-syntax-change.
+
+This document has greatly benefitted from the input or the RSWG.
+In particular,
+Alexis Rossi,
+Brian Carpenter,
+Eliot Lear,
+Jay Daley,
+John Levine,
+and Pete Resnick,
+gave significant input on the early drafts of this document.
+
+--- back
+
+
+
+
+<!--
 # Updated Definition of "Canonical Format" and "Archive"
 
 Section 3 of {{RFC7990}} defines the canonical format as:
@@ -114,10 +270,10 @@ The paragraphs immediately above specifies policy for updating publication forma
 There is not yet consensus in the RSWG about whether that should or should not be policy.
 \]\]\]
 
-
 # Rationale
 
-The format for published RFCs is RFCXML {{RFC7990}}.  Historically, the published version of an RFC has been immutable.
+The format for published RFCs is RFCXML {{RFC7990}}.
+Historically, the published version of an RFC has been immutable.
 {{Section 7.6 of RFC9280}} says "Once published, RFC Series documents are not changed."
 
 The RFCXML format {{RFC7991}} is not able to address use cases that were not originally anticipated during its design.
@@ -171,40 +327,6 @@ When the RFC Editor archives documents, it does so in a manner that allows them 
 This document does not specify how archives are maintained or how archived RFC XML might be located or identified.
 The methods for storage and access will be determined by the RFC Editor in consultation with the technical community.
 
-
-# IANA Considerations
-
-This document has no IANA considerations.
-
-
-# Security Considerations
-
-This document has the same security considerations as {{RFC7990}}. Those are:
-
-> Changing the format for RFCs involves modifying a great number of components to publication.
-Understanding those changes and the implications for the entire tool chain is critical so as to avoid unintended bugs that would allow unintended changes to text.
-Unintended changes to text could in turn corrupt a standard, practice, or critical piece of information about a protocol.
-
-The RSWG are responsible for managing the risk of semantic changes that would affect the interpretation of existing and future RFCs.
-Changes to content that has security implications would have security-relevant consequences.
-
-
-# Acknowledgments
-
-Martin Thomson wrote a great deal of the significant text here as part of draft-thomson-rswg-syntax-change.
-
-This document has greatly benefitted from the input or the RSWG.
-In particular,
-Alexis Rossi,
-Brian Carpenter,
-Eliot Lear,
-Jay Daley,
-John Levine,
-and Pete Resnick,
-gave significant input on the early drafts of this document.
-
---- back
-
 # Advice on Regenerating Publication Formats
 
 This document does not include specific guidance regarding the generation of publication formats from the RFCXML source for the definitive version of an RFC.
@@ -232,3 +354,7 @@ Making fresh renderings available more often could mean a greater risk that peop
 However, errors in publication formats might persist if they are not replaced as tool quality and reliability improves.
 
 Old copies of replaced publication formats will be retained to provide the ability to isolate changes and understand the evolution of documents.
+
+-->
+
+
