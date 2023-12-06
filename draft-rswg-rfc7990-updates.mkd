@@ -131,7 +131,8 @@ It  does not contain comments or processing instructions.
 
 Historically, the published version of an RFC has been immutable.
 This document defines a new policy that the RPC is permitted to re-issue an RFC for changes that do not affect the semantics of the RFC.
-Reasons for such a change include (but are not limited to) updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
+Reasons for such a change include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
+Additional items may be added to this list after discussion and consensus with the RSWG.
 This policy explicitly updates the stability policy from {{RFC9280}} for the definitive version.
 
 ## Expected Updates to XMLRFC
@@ -170,8 +171,9 @@ JavaScript in the HTML publication version is supported on a limited basis.
 It is not be permitted to overwrite or change any text present in the rendered HTML.
 It may, on a limited basis, add text that provides post-publication metadata or pointers, if warranted. 
 All such text is clearly marked as additional.
+
 \[\[
-In the HTML format currently used by the RFC Edito, the text from the Javascript is not clearly marked as additional.
+In the HTML format currently used by the RFC Editor, the text from the Javascript is not clearly marked as additional.
 \]\]
 
 ## PDF
@@ -213,6 +215,8 @@ When the RPC archives documents, it does so in a manner that allows them to be f
 
 This document does not specify how archives are maintained or how archived RFC XML might be located or identified.
 The methods for storage and access will be determined by the RPC in consultation with the technical community.
+
+\[\[ Need to talk about RFC 8153 \]\]
 
 {{archive-advice}} gives some non-normative advice created by the RSWG.
 
