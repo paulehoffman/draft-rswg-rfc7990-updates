@@ -101,8 +101,8 @@ At the highest level, the changes that {{RFC7990}} made to the RFC format involv
 The RPC became responsible for more than just the plain-text file and the PDF-from-text format created at time of publication; the RPC now creates several different formats in order to meet the diverse requirements of the community.
 
 The final XML file produced by the RPC is the definitive version for RFCs; it is the lowest common denominator that holds all the information intended for an RFC.
-Additonal publication formats (HTML, PDF, and plain text) are also published by the RPC.
-The publication formats are described in {{pub-versions}} and fully specified in other RFCs.
+Additonal file formats (HTML, PDF, and plain text) are also published by the RPC.
+The file formats are described in {{pub-versions}} and fully specified in other RFCs.
 
 
 # Definitive Version of an RFC
@@ -131,7 +131,7 @@ It  does not contain comments or processing instructions.
 
 Historically, the published version of an RFC has been immutable.
 This document defines a new policy that the RPC is permitted to re-issue an RFC for changes that do not affect the semantics of the RFC.
-Reasons for such a change include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
+Reasons for such a change include updates to the RFCXML format, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
 Additional items may be added to this list after discussion and consensus with the RSWG.
 This policy explicitly updates the stability policy from {{RFC9280}} for the definitive version.
 
@@ -253,15 +253,15 @@ gave significant input on the early drafts of this document.
 --- back
 
 
-# Advice on Regenerating Publication Formats {#archive-advice}
+# Advice on Regenerating Publication Versions {#archive-advice}
 
-This document does not include specific guidance regarding the generation of publication formats from the RFCXML source for the definitive version of an RFC.
-Decisions about how to maintain publication formats are not a matter governed by policy as specified in {{RFC9280}}.
+This document does not include specific guidance regarding the generation of publication versions from the RFCXML source for the definitive version of an RFC.
+Decisions about how to maintain publication versions are not a matter governed by policy as specified in {{RFC9280}}.
 This appendix contains advice and considerations for the process of regeneration that came out of discussions of the policy changes in this document.
 
 Changes to the RFCXML for existing RFCs might result in changes to the documents rendered from that XML.
 At the same time, the tools used to generate renderings are under active maintenance.
-Making it possible for a fresh rendering to replace existing publication formats is a goal supported by the policy changes in this document.
+Making it possible for a fresh rendering to replace existing publication versions is a goal supported by the policy changes in this document.
 
 This creates a risk that a rerendered documents change in unexpected ways when they are regenerated.
 This risk of unintentional change can be managed by implementing validation processes:
@@ -275,8 +275,8 @@ This will ensure that changes in tooling are deliberate and understood.
 Validation should be aided by automated tooling that is able to disregard inconsequential changes in renderings, like changes in timestamps and other annotations.
 Validation of tooling can be continuous, for which automation is essential.
 
-The decision to make renderings available as the publication format for an RFC is a decision that can be made on a case-by-case basis.
+The decision to make renderings available as the publication versions for an RFC is a decision that can be made on a case-by-case basis.
 Making fresh renderings available more often could mean a greater risk that people seeking to read RFCs will obtain a copy that contains accidental errors.
-However, errors in publication formats might persist if they are not replaced as tool quality and reliability improves.
+However, errors in publication versions might persist if they are not replaced as tool quality and reliability improves.
 
-Old copies of replaced publication formats will be retained to provide the ability to isolate changes and understand the evolution of documents.
+Old copies of replaced publication versions will be retained to provide the ability to isolate changes and understand the evolution of documents.
