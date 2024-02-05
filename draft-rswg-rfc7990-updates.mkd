@@ -38,7 +38,7 @@ normative:
 informative:
   RFC20:
   RFC6949:
-  RFC8651:
+  RFC8650:
   RFC9280:
 
 --- abstract
@@ -94,7 +94,7 @@ Section 7.6 of "RFC Editor Model (Version 3)" {{RFC9280}} says "Once published, 
 
 ## Key Changes from the Earlier RFC Process
 
-The first RFC to be published using the group of RFCs described in {{RFC7990}} was {{RFC8651}}, published in October 2019.
+The first RFC to be published using the group of RFCs described in {{RFC7990}} was {{RFC8650}}, published in November 2019.
 In the time since then, all published RFCs have followed the general plan from {{RFC7990}}.
 
 At the highest level, the changes that {{RFC7990}} made to the RFC format involved breaking away from solely ASCII ({{RFC20}}) plain text and moving to a definitive version that includes all the information required for rendering a document into a wide variety of publication versions.
