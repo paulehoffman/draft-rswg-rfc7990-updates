@@ -6,7 +6,7 @@ docname: draft-rswg-rfc7990-updates-02
 stand_alone: true
 v: 3
 obsoletes: 7990
-updates: 9280
+updates: 7995, 8153, 9280
 
 ipr: trust200902
 kw: Internet-Draft
@@ -38,6 +38,7 @@ normative:
 informative:
   RFC20:
   RFC6949:
+  RFC8153:
   RFC8650:
   RFC9280:
 
@@ -83,6 +84,8 @@ This document changes {{RFC7990}} in significant ways:
 - It changes the phrase "publication format" to "publication versions" and defines the use of the publication versions in the series.
 - It changes the phrase "xml2rfc version 3" to "RFCXML".
 - It defines a policy governing how the RFCXML format changes.
+- It updates {{RFC7995}} and {{RFC8153}} by dropping the requirement that the RPC use PDF/A-3 standard,
+and by dropping the requirement that the XML be embedded in the PDF publication version.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
 - It changes the name of the body that publishes RFCs from "RFC Editor" to "RPC", based on {{RFC9280}}
@@ -178,16 +181,16 @@ In the HTML format currently used by the RFC Editor, the text from the Javascrip
 
 ## PDF
 
-\[\[
-The RSWG recently discussed making simplifying changes to RFC 7995, which would also cause this section to change.
-\]\]
+{{RFC7995}} describes the different versions of PDF is offered, with a recommendation of what PDF standard should apply to RFCs.
 
-{{RFC7995}} describes the tags and profiles that are used to create the new PDF format, including both the internal structure and the visible layout of the file.
-A review of the different versions of PDF is offered, with a recommendation of what PDF standard should apply to RFCs.
+The PDF file is rendered from the XML file or from the HTML publication version; it is not derived from the plain-text publication version.
 
-The PDF file is rendered from the XML file; it is not derived from the plain-text publication version.
+The PDF publication version conforms to the PDF standard.
+The RPC can decide which PDF standard will be supported after consultation with the community.
 
-The PDF publication version conforms to the PDF/A-3 standard and embeds the XML source from the definitive version.
+This document updates {{RFC7995}} and {{RFC8153}} by dropping the requirement that the RPC use PDF/A-3 standard,
+and by dropping the requirement that the XML be embedded in the PDF publication version.
+Other parts of {{RFC8153}}, particularly the need to archive metadata about RFCs, are not changed.
 
 The PDF looks more like the HTML publication version than the plain-text publication version.
 The PDF includes a rich set of tags and metadata within the document.
@@ -215,8 +218,6 @@ When the RPC archives documents, it does so in a manner that allows them to be f
 
 This document does not specify how archives are maintained or how archived RFC XML might be located or identified.
 The methods for storage and access will be determined by the RPC in consultation with the technical community.
-
-\[\[ Need to talk about RFC 8153 \]\]
 
 {{archive-advice}} gives some non-normative advice created by the RSWG.
 
