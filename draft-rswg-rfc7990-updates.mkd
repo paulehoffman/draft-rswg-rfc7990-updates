@@ -89,6 +89,7 @@ and by dropping the requirement that the XML be embedded in the PDF publication 
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
 - It changes the name of the body that publishes RFCs from "RFC Editor" to "RPC", based on {{RFC9280}}
+- It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
 
@@ -170,14 +171,9 @@ The body of the document uses a subset of HTML.
 The documents include Cascading Style Sheets (CSS) for default visual presentation; the CSS can be overwritten by a local CSS file.
 The allowed CSS is described in {{RFC7993}}.
 
-JavaScript in the HTML publication version is supported on a limited basis.
+JavaScript in the HTML publication version is supported.
 It is not be permitted to overwrite or change any text present in the rendered HTML.
-It may, on a limited basis, add text that provides post-publication metadata or pointers, if warranted. 
-All such text is clearly marked as additional.
-
-\[\[
-In the HTML format currently used by the RFC Editor, the text from the Javascript is not clearly marked as additional.
-\]\]
+It may add text that provides post-publication metadata or pointers. 
 
 ## PDF
 
