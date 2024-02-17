@@ -54,6 +54,11 @@ This draft is part of the RFC Series Working Group (RSWG); see <https://datatrac
 There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
 Issues can be raised there, but probably should be on the mailing list instead.
 
+<!-- PENDING ISSUES 
+
+Change from PDF to PDF/A
+
+-->
 
 --- middle
 
