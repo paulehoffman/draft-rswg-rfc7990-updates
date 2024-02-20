@@ -1,7 +1,7 @@
 ---
 title: Updated RFC Format Framework
 abbrev: Format Framework
-docname: draft-rswg-rfc7990-updates-03
+docname: draft-rswg-rfc7990-updates-04
 
 stand_alone: true
 v: 3
@@ -56,8 +56,6 @@ Issues can be raised there, but probably should be on the mailing list instead.
 
 <!-- PENDING ISSUES 
 
-Change from PDF to PDF/A
-
 -->
 
 --- middle
@@ -89,7 +87,7 @@ This document changes {{RFC7990}} in significant ways:
 - It changes the phrase "publication format" to "publication versions" and defines the use of the publication versions in the series.
 - It changes the phrase "xml2rfc version 3" to "RFCXML".
 - It defines a policy governing how the RFCXML format changes.
-- It updates {{RFC7995}} and {{RFC8153}} by dropping the requirement that the RPC use PDF/A-3 standard,
+- It updates {{RFC7995}} and {{RFC8153}} by changing the requirement from using the PDF/A-3 standard to using the PDF/A standard,
 and by dropping the requirement that the XML be embedded in the PDF publication version.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
@@ -189,7 +187,7 @@ The PDF file is rendered from the XML file or from the HTML publication version;
 The PDF publication version conforms to the PDF standard.
 The RPC can decide which PDF standard will be supported after consultation with the community.
 
-This document updates {{RFC7995}} and {{RFC8153}} by dropping the requirement that the RPC use PDF/A-3 standard,
+This document updates {{RFC7995}} and {{RFC8153}} by changing the requirement from the RPC use PDF/A-3 standard to instead using the PDF/A standard,
 and by dropping the requirement that the XML be embedded in the PDF publication version.
 Other parts of {{RFC8153}}, particularly the need to archive metadata about RFCs, are not changed.
 
