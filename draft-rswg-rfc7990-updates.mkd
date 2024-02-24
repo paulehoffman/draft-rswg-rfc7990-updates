@@ -114,13 +114,13 @@ The file formats are described in {{pub-versions}} and fully specified in other 
 
 # Definitive Version of an RFC
 
-The definitive version produced by the RPC is the version that holds all the information intended for an RFC.
-The RPC may change the definitive version of an RFC over time, as described in {{updating}}.
-See {{RFC7991}} for the complete description of the XMLRFC syntax and semantics.
+The definitive version of an RFC is the XML file.
+It is produced by the RPC, and is the version that holds all the information intended for an RFC.
+The RPC may change the definitive version of an RFC over time (that is, change the XML file), as described in {{updating}}.
 
+See {{RFC7991}} for the complete description of the XMLRFC syntax and semantics.
 The XML may contain SVG line art, as described in {{RFC7996}}.
 That SVG will also appear in the HTML and PDF publication versions.
-
 The XML may contain non-ASCII characters, as described in {{RFC7997}}.
 These characters will appear in all the publication versions.
 
@@ -137,7 +137,7 @@ It  does not contain comments or processing instructions.
 ## Updating the Definitive Version of an RFC {#updating}
 
 Historically, the published version of an RFC has been immutable.
-This document defines a new policy that the RPC is permitted to re-issue an RFC for changes that do not affect the semantics of the RFC.
+This document defines a new policy that the RPC is permitted to re-issue an RFC for changes that preserve to the greatest extent possible the semantics expressed in the original RFC.
 Reasons for such a change include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
 The RPC will keep a public record of when it re-issues and RFC, and give a short description of its reasoning for each change.
 This policy explicitly updates the stability policy from {{RFC9280}} for the definitive version.
@@ -175,8 +175,8 @@ The documents include Cascading Style Sheets (CSS) for default visual presentati
 The allowed CSS is described in {{RFC7993}}.
 
 JavaScript in the HTML publication version is supported.
-It is not be permitted to overwrite or change any text present in the rendered HTML.
-It may add text that provides post-publication metadata or pointers. 
+The JavaScript in the HTML is not be permitted to overwrite or change any text present in the rendered HTML.
+The JavaScript in the HTML may add text that provides post-publication metadata or pointers. 
 
 ## PDF
 
@@ -209,7 +209,7 @@ Authors may choose to have pointers to line art in other publication versions in
 
 # Archived Documents
 
-The RPC will keep archived set of all definitive versions of RFCs as well as archived sets of the publication versions for an RFC that were published.
+The RPC will keep archived set of all definitive versions of RFCs as well as archived sets of the publication versions for an RFC that were previously published.
 These archived sets must be available using the same access methods as for the XML and the published publication versions.
 Every archived set shall record the date that a document was created or revised.
 
