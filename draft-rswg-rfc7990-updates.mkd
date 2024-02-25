@@ -126,8 +126,6 @@ These characters will appear in all the publication versions.
 
 The XML file will not contain any RFCXML vocabulary elements or attributes that have been marked deprecated.
 
-Authors may submit documents using the RFCXML v2 vocabulary, but the final publication will be converted to use the RFCXML vocabulary.
-
 The published XML file must contain all information necessary to render a variety of formats; any question about what was intended in the publication will be answered from this file.
 It is self-contained with all the information known at publication time.
 For instance, all features that reference externally defined input are expanded.
