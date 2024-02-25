@@ -161,7 +161,7 @@ Similarly, as production tools change, publication versions can be regenerated t
 
 Publication versions and the contexts in which they are displayed can optionally provide additional details of the specific RFCXML version that they were generated from, or provide a means to discover alternative renderings.
 
-This document defines a new policy that the RPC is permitted to re-issue publication versions of an RFC.
+This document defines a new policy that the RPC is permitted but not required to re-issue publication versions of an RFC.
 This can happen if the definitive version is updated, but can also happen due to other changes, such as updates to the RPC's tooling. 
 This policy explicitly updates the stability policy from {{RFC9280}} for publication versions.
 
