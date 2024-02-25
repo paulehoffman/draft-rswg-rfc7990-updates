@@ -124,9 +124,9 @@ That SVG will also appear in the HTML and PDF publication versions.
 The XML may contain non-ASCII characters, as described in {{RFC7997}}.
 These characters will appear in all the publication versions.
 
-The XML file will not contain any RFCXMLvocabulary elements or attributes that have been marked deprecated.
+The XML file will not contain any RFCXML vocabulary elements or attributes that have been marked deprecated.
 
-Authors may submit documents using the RFCXML v2 vocabulary, but the final publication will be converted to use the RFCXMLvocabulary.
+Authors may submit documents using the RFCXML v2 vocabulary, but the final publication will be converted to use the RFCXML vocabulary.
 
 The published XML file must contain all information necessary to render a variety of formats; any question about what was intended in the publication will be answered from this file.
 It is self-contained with all the information known at publication time.
@@ -167,7 +167,7 @@ This policy explicitly updates the stability policy from {{RFC9280}} for publica
 
 ## HTML
 
-{{RFC7992}} describes the semantic HTML produced by the RPC from the XMLfiles.
+{{RFC7992}} describes the semantic HTML produced by the RPC from the XML files.
 The HTML file is rendered from the XML file; it is not derived from the plain-text publication version.
 The body of the document uses a subset of HTML.
 
