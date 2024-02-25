@@ -91,7 +91,7 @@ This document changes {{RFC7990}} in significant ways:
 and by dropping the requirement that the XML be embedded in the PDF publication version.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
-- It changes the name of the body that publishes RFCs from "RFC Editor" to "RPC", based on {{RFC9280}}
+- It changes the name of the body that publishes RFCs from "RFC Editor" to "RPC"
 - It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
