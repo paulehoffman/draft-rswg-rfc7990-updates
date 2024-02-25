@@ -149,7 +149,7 @@ Updates to the RFCXML specification that are applied to existing RFCs should pre
 The goal of limiting changes only to syntax is to preserve the semantic meaning encoded in the RFC XML document.
 
 This policy does not require that updates to RFCXML avoid all risk of introducing semantic changes to existing RFCs.
-Instead, it only requires that the RSWG carefully consider the potential for semantic changes, take steps to understand the risk of a semantic change (either deliberate or inadvertent), and to limit those risks.
+Instead, it only requires that such updates consider the potential for semantic changes, take steps to understand the risk of a semantic change (either deliberate or inadvertent), and to limit those risks.
 
 
 # Publication Versions {#pub-versions}
