@@ -152,8 +152,8 @@ Instead, it only requires that such updates consider the potential for semantic 
 # Publication Versions {#pub-versions}
 
 Publication version files may be republished as needed.
-XML format errors, and better design choices, have been discovered by the community since the first RFCs were published using the RFCXML format.
-When the XML in a definitives version changes, publication versions can change, even if this might not result in observable differences.
+XML format errors and better design choices have been discovered by the community since the first RFCs were published using the RFCXML format.
+When the XML in a definitive version changes, publication versions can change, even if this might not result in observable differences.
 Similarly, as production tools change, publication versions can be regenerated to ensure a consistent presentation across the series.
 
 Publication versions and the contexts in which they are displayed can optionally provide additional details of the specific RFCXML version that they were generated from, or provide a means to discover alternative renderings.
