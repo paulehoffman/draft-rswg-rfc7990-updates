@@ -80,7 +80,7 @@ Other implementers must not expect those changes to remain backwards compatible 
 It talked about "the XML file" as if there will only be one XML file for an RFC because this was the expectation at the time {{RFC7990}} was published.
 It also talked about "publication formats" as the versions of HTML, text, and PDF versions derived from the definitive version.
 
-After extensive experience with publishing RFCs in the RFCXML format (defined in {{RFC7991}}, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
+After extensive experience with publishing RFCs in the RFCXML format {{RFC7991}}, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
 This document changes {{RFC7990}} in significant ways:
 
 - It changes the phrase "canonical format" to "definitive version" and defines the use of the definitive version in the series.
