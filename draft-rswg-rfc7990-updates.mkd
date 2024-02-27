@@ -136,7 +136,7 @@ It  does not contain comments or processing instructions.
 Historically, the published version of an RFC has been immutable.
 This document defines a new policy that the RPC is permitted to re-issue an RFC for changes that preserve to the greatest extent possible the semantics expressed in the original RFC.
 Reasons for such a change include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
-The RPC will keep a public record of when it re-issues and RFC, and give a short description of its reasoning for each change.
+The RPC will keep a public record of when it re-issues any RFC, and give a short description of its reasoning for each change.
 This policy explicitly updates the stability policy from {{RFC9280}} for the definitive version.
 
 ## Expected Updates to XMLRFC
