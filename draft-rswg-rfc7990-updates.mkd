@@ -1,7 +1,7 @@
 ---
 title: Updated RFC Format Framework
 abbrev: Format Framework
-docname: draft-rswg-rfc7990-updates-notyet05
+docname: draft-rswg-rfc7990-updates-05
 
 stand_alone: true
 v: 3
@@ -170,7 +170,7 @@ The documents include Cascading Style Sheets (CSS) for default visual presentati
 The allowed CSS is described in {{RFC7993}}.
 
 JavaScript in the HTML publication version is supported.
-The JavaScript in the HTML is not be permitted to change the meaning of the RFC.
+The JavaScript in the HTML is not permitted to change the meaning of the RFC.
 The JavaScript in the HTML may add text that provides post-publication metadata or pointers. 
 
 ## PDF
