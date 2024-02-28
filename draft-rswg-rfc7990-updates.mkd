@@ -74,7 +74,7 @@ The details described in this document are expected to continue to change over t
 
 Implementors of those components are advised to avoid assuming that all such changes will be backwards-compatible.
 
-## Changes to RFC 7990 and RFC 9280
+## Changes to RFC 7990
 
 {{RFC7990}} defined a framework for how RFCs would be published after that document was published, including new formats and a new "canonical format" for archiving RFCs.
 It talked about "the XML file" as if there will only be one XML file for an RFC because this was the expectation at the time {{RFC7990}} was published.
@@ -96,8 +96,24 @@ and by dropping the requirement that the XML be embedded in the PDF publication 
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
 
-Section 7.6 of "RFC Editor Model (Version 3)" {{RFC9280}} says "Once published, RFC Series documents are not changed."
-{{updating}} and {{pub-versions}} in this document update that policy.
+## Changes to RFC 9280
+
+Section 7.6 of {{RFC9280}} currently says:
+
+> Once published, RFC Series documents are not changed.
+
+This document replaces that sentence with:
+
+> Once published, RFC Series documents may be re-issued, but unintended changes shall be avoided, and content semantics are to be preserved.
+
+This document also creates a new policy that would exist in Section 7 of {{RFC9280}}:
+
+> 7.8.  Consistency
+> 
+> The series as a whole is consistently presented.
+RFCs are copyedited, formatted, published, and may be reissued so that they are consistently presented to the public.
+
+{{updating}} and {{pub-versions}} in this document are based on this updated policy in {{RFC9280}}.
 
 ## Key Changes from the Earlier RFC Process
 
