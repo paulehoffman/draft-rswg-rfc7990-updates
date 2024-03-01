@@ -96,7 +96,7 @@ and by dropping the requirement that the XML be embedded in the PDF publication 
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
 
-## Changes to RFC 9280
+## Changes to RFC 9280 {#changes-to-9280}
 
 Section 7.6 of {{RFC9280}} currently says:
 
@@ -151,7 +151,7 @@ Historically, the published version of an RFC has been immutable.
 This document defines a new policy that the RPC is permitted to re-issue an RFC for changes that preserve to the greatest extent possible the semantics expressed in the original RFC.
 Reasons for such a change include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
 The RPC will keep a public record of when it re-issues any RFC, and give a short description of its reasoning for each change.
-This policy explicitly updates the stability policy from {{RFC9280}} for the definitive version.
+This policy explicitly updates the stability policy from {{RFC9280}} for the definitive version, as specfied in {{changes-to-9280}}.
 
 ## Expected Updates to XMLRFC
 
@@ -174,7 +174,7 @@ Publication versions and the contexts in which they are displayed can optionally
 
 This document defines a new policy that the RPC is permitted but not required to re-issue publication versions of an RFC.
 This can happen if the definitive version is updated, but can also happen due to other changes, such as updates to the RPC's tooling. 
-This policy explicitly updates the stability policy from {{RFC9280}} for publication versions.
+This policy explicitly updates the stability policy from {{RFC9280}} for publication versions, as specfied in {{changes-to-9280}}.
 
 ## HTML
 
