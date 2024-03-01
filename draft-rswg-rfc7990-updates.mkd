@@ -206,8 +206,6 @@ When the RPC archives documents, it does so in a manner that allows them to be f
 This document does not specify how archives are maintained or how archived documents might be located or identified.
 The methods for storage and access will be determined by the RPC in consultation with the technical community.
 
-{{archive-advice}} gives some non-normative advice created by the RSWG.
-
 
 # IANA Considerations
 
@@ -216,13 +214,12 @@ This document has no IANA considerations.
 
 # Security Considerations
 
-Changing the format for RFCs involves modifying a great number of components to publication.
-Understanding those changes and the implications for the entire tool chain is critical so as to avoid unintended consequences that would allow unintended changes to text.
-Unintended changes to text could in turn corrupt a standard, practice, or critical piece of information about a protocol.
+Allowing changes to the definitive versions and publication versions of RFCs introduces two key risks:
 
-The RSWG is responsible for managing the risk of semantic changes that would affect the interpretation of existing and future RFCs.
-Changes to content that has security implications would have security-relevant consequences.
+1. Unintended changes could occur in either the definitive version or publication versions of an RFC as a result of an editing error, or may be introduced into a publication version when it is regenerated from the definitive version.  This may result in the corruption of a standard, practice, or critical piece of information about a protocol, and harm to the reputation of the RFC series.
+2. The reputation of the RFC series may also be adversely affected as a result of new versions being released for trivial reasons, leading to consumers of RFCs feeling they have wasted effort in reviewing or processing new versions, or by new versions being released too often, leading to a loss of trust in the stability of the series.
 
+The RPC is expected to identify, track and actively mitigate these and any other risks introduced by this new policy.  
 
 # Acknowledgments
 
@@ -239,32 +236,3 @@ and Pete Resnick,
 gave significant input on the early drafts of this document.
 
 --- back
-
-
-# Advice on Regenerating Publication Versions {#archive-advice}
-
-This document does not include specific guidance regarding the generation of publication versions from the RFCXML source for the definitive version of an RFC.
-Decisions about how to maintain publication versions are not a matter governed by policy as specified in {{RFC9280}}.
-This appendix contains advice and considerations for the process of regeneration that came out of discussions of the policy changes in this document.
-
-Changes to the RFCXML for existing RFCs might result in changes to the documents rendered from that XML.
-At the same time, the tools used to generate renderings are under active maintenance.
-Making it possible for a fresh rendering to replace existing publication versions is a goal supported by the policy changes in this document.
-
-This creates a risk that a rerendered documents change in unexpected ways when they are regenerated.
-This risk of unintentional change can be managed by implementing validation processes:
-
-- Tools can be continuously checked by producing renderings for existing RFCs.
-Any change in the rendered document can then be compared with previous outputs and validated.
-This will ensure that changes in tooling are deliberate and understood.
-
-- When a change to the XML format occurs, rendered documents can be regenerated and any change in the rendering can be validated.
-
-Validation should be aided by automated tooling that is able to disregard inconsequential changes in renderings, like changes in timestamps and other annotations.
-Validation of tooling can be continuous, for which automation is essential.
-
-The decision to make renderings available as the publication versions for an RFC is a decision that can be made on a case-by-case basis.
-Making fresh renderings available more often could mean a greater risk that people seeking to read RFCs will obtain a copy that contains accidental errors.
-However, errors in publication versions might persist if they are not replaced as tool quality and reliability improves.
-
-Old copies of replaced publication versions will be retained to provide the ability to isolate changes and understand the evolution of documents.
