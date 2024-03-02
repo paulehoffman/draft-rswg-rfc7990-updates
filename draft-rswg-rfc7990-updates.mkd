@@ -83,9 +83,12 @@ It also talked about "publication formats" as the versions of HTML, text, and PD
 After extensive experience with publishing RFCs in the RFCXML format {{RFC7991}}, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
 This document changes {{RFC7990}} in significant ways:
 
-- It changes the phrase "canonical format" to "definitive version" and defines the use of the definitive version in the series.
-- It changes the phrase "publication format" to "publication versions" and defines the use of the publication versions in the series.
 - It changes the phrase "xml2rfc version 3" to "RFCXML".
+- It defines four terms that replace the use of the term "canonical" and clarifies "format":
+    - The "definitive format", which is RFCXML
+    - The "definitive version", which is a published RFC in the definitive format
+    - A "publication format", which is currently one of PDF, plain text, or HTML
+    - A "publication version", which is a published RFC in one of the publication formats
 - It defines a policy governing how the RFCXML format changes.
 - It updates {{RFC7995}} and {{RFC8153}} by changing the requirement from using the PDF/A-3 standard to using the PDF/A standard,
 and by dropping the requirement that the XML be embedded in the PDF publication version.
@@ -93,6 +96,16 @@ and by dropping the requirement that the XML be embedded in the PDF publication 
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
 - It changes the name of the body that publishes RFCs from "RFC Editor" to "RPC"
 - It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text
+
+When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from 7990:
+
+> Canonical format: the authorized, recognized, accepted, and archived version of the document
+
+and
+
+> At the highest level, the changes being made to the RFC format involve breaking away from solely ASCII plain text and moving to a canonical format that includes all the information required for rendering a document into a wide variety of publication formats.
+
+This document uses two terms, "definitive version" and "definitive format", for the earlier term "canonical format".
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
 
