@@ -124,7 +124,7 @@ This document also creates a new policy that would exist in Section 7 of {{RFC92
 > 7.8.  Consistency
 > 
 > The series as a whole is consistently presented.
-RFCs are copyedited, formatted, published, and may be reissued to maintain a consistent presentation across the Series.
+RFCs are copyedited, formatted, published, and may be reissued to maintain a consistent presentation.
 
 {{updating}} and {{pub-versions}} in this document are based on this updated policy in {{RFC9280}}.
 
@@ -182,7 +182,7 @@ In deciding whether to update the publication versions of an RFC, the RPC will t
 
 XML format errors and better design choices have been discovered by the community since the first RFCs were published using the RFCXML format.
 When the XML in a definitive version changes, the publication versions may change, even if this might not result in observable differences.
-Similarly, as production tools change, publication versions may be regenerated to ensure a consistent presentation across the series.
+Similarly, as production tools change, publication versions may be regenerated to ensure a consistent presentation.
 
 ## HTML
 
