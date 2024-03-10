@@ -104,7 +104,7 @@ Section 7.6 of {{RFC9280}} currently says:
 
 This document replaces that sentence with:
 
-> Once published, RFC Series documents may be re-issued, but the semantic content of published documents shall be preserved.
+> Once published, RFC Series documents may be re-issued, but the semantic content of published documents shall be preserved to the greatest extent possible.
 
 This document also creates a new policy that would exist in Section 7 of {{RFC9280}}:
 
