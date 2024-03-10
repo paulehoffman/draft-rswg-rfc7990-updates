@@ -238,12 +238,11 @@ This document has no IANA considerations.
 
 # Security Considerations
 
-Allowing changes to the definitive versions and publication versions of RFCs introduces two key risks:
+Allowing changes to the definitive versions and publication versions of RFCs introduces risks.
+A significant risk is that unintended changes could occur in either the definitive version or publication versions of an RFC as a result of an editing error, or may be introduced into a publication version when it is regenerated from the definitive version.
+This may result in the corruption of a standard, practice, or critical piece of information about a protocol, and harm to the reputation of the RFC series.
 
-1. Unintended changes could occur in either the definitive version or publication versions of an RFC as a result of an editing error, or may be introduced into a publication version when it is regenerated from the definitive version.  This may result in the corruption of a standard, practice, or critical piece of information about a protocol, and harm to the reputation of the RFC series.
-2. The reputation of the RFC series may also be adversely affected as a result of new versions being released for trivial reasons, leading to consumers of RFCs feeling they have wasted effort in reviewing or processing new versions, or by new versions being released too often, leading to a loss of trust in the stability of the series.
-
-The RPC is expected to identify, track and actively mitigate these and any other risks introduced by this new policy.  
+The RPC is expected to identify, track and actively mitigate risks introduced by this new policy.  
 
 # Acknowledgments
 
