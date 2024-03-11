@@ -242,7 +242,7 @@ Allowing changes to the definitive versions and publication versions of RFCs int
 A significant risk is that unintended changes could occur in either the definitive version or publication versions of an RFC as a result of an editing error, or may be introduced into a publication version when it is regenerated from the definitive version.
 This may result in the corruption of a standard, practice, or critical piece of information about a protocol, and harm to the reputation of the RFC series.
 
-The RPC is expected to identify, track and actively mitigate risks introduced by this new policy.  
+The RPC is expected to identify, track, and actively mitigate risks introduced by this new policy.  
 
 # Acknowledgments
 
