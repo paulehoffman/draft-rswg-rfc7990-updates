@@ -221,7 +221,7 @@ In particular, it focuses on what changed from the earlier plain-text format for
 
 # Archived Documents
 
-The RPC will keep archived set of all definitive versions of RFCs as well as archived sets of the publication versions for an RFC that were previously published.
+The RPC will keep an archived set of all definitive versions of RFCs as well as archived sets of the publication versions for an RFC that were previously published.
 These archived sets must be available using the same access methods as for the XML and the published publication versions.
 Every archived set shall record the date that a document was created or revised.
 
