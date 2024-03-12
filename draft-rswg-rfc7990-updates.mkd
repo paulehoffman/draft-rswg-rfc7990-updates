@@ -1,7 +1,7 @@
 ---
 title: Updated RFC Format Framework
 abbrev: Format Framework
-docname: draft-rswg-rfc7990-updates-06
+docname: draft-rswg-rfc7990-updates-pre07
 
 stand_alone: true
 v: 3
