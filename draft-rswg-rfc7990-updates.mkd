@@ -90,8 +90,6 @@ This document changes {{RFC7990}} in significant ways:
     - A "publication format", which is currently one of PDF, plain text, or HTML
     - A "publication version", which is a published RFC in one of the publication formats
 - It defines a policy governing how the RFCXML format changes.
-- It updates {{RFC7995}} and {{RFC8153}} by changing the requirement from using the PDF/A-3 standard to using the PDF/A standard,
-and by dropping the requirement that the XML be embedded in the PDF publication version.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
 - It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center (RPC)"
@@ -108,6 +106,11 @@ and
 This document uses two terms, "definitive version" and "definitive format", for the earlier term "canonical format".
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
+
+## Changes to RFCs 7995 and 8153 {#changes-to-7995-and-8153}
+
+This document updates {{RFC7995}} and {{RFC8153}} by changing the requirement from using the PDF/A-3 standard to using the PDF/A standard,
+and by dropping the requirement that the XML be embedded in the PDF publication version.
 
 ## Changes to RFC 9280 {#changes-to-9280}
 
