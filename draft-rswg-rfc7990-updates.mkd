@@ -133,15 +133,15 @@ RFCs are copyedited, formatted, published, and may be reissued to maintain a con
 
 ## Key Changes from the Earlier RFC Process
 
-The first RFC to be published using the group of RFCs described in {{RFC7990}} was {{RFC8650}}, published in November 2019.
+The first RFC to be published following the guidance of the group of RFCs described in {{RFC7990}} was {{RFC8650}}, published in November 2019.
 In the time since then, all published RFCs have followed the general plan from {{RFC7990}}.
 
-At the highest level, the changes that {{RFC7990}} made to the RFC format involved breaking away from solely ASCII ({{RFC20}}) plain text and moving to a definitive version that includes all the information required for rendering a document into a wide variety of publication versions.
-The RPC became responsible for more than just the plain-text file and a PDF rendering that was created from the plain-text at the time of publication; the definitive version and three publication versions of the RFC in order to meet the diverse requirements of the community.
+At the highest level, the changes that {{RFC7990}} made to the RFC format involved breaking away from solely ASCII ({{RFC20}}) plain text and moving to a definitive format that includes all the information required for rendering a document into a wide variety of publication formats.
+The RPC became responsible for more than just the plain-text file and a PDF rendering that was created from the plain text at the time of publication; the RPC now creates the definitive version and three publication versions of the RFC in order to meet the diverse requirements of the community.
 
-The final XML file produced by the RPC is the definitive version for RFCs; it holds all the information intended for an RFC.
-Additional file formats (HTML, PDF, and plain text) are also published by the RPC.
-The file formats are described in {{pub-versions}} and fully specified in other RFCs.
+The final RFCXML file produced by the RPC is the definitive version for RFCs; it holds all the information intended for an RFC.
+Additional publication versions (HTML, PDF, and plain text) are also published by the RPC.
+The publication formats are described in {{pub-versions}} and fully specified in other RFCs.
 
 
 # Definitive Version of an RFC
