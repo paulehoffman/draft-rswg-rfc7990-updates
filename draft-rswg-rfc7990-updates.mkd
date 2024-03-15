@@ -77,13 +77,12 @@ Implementors of those components are advised to avoid assuming that all such cha
 ## Changes to RFC 7990
 
 {{RFC7990}} defined a framework for how RFCs would be published after that document was published, including new formats and a new "canonical format" for archiving RFCs.
-It talked about "the XML file" as if there will only be one XML file for an RFC because this was the expectation at the time {{RFC7990}} was published.
-It also talked about "publication formats" as the versions of HTML, text, and PDF versions derived from the definitive version.
+It talked about "the XML file" as if there would only be one XML file for an RFC because that was the expectation at the time {{RFC7990}} was published.
+It also talked about "publication formats" as the versions of HTML, text, and PDF derived from the "canonical format".
 
 After extensive experience with publishing RFCs in the RFCXML format {{RFC7991}}, it has been decided that an RFC's XML file can be updated for narrowly limited purposes.
 This document changes {{RFC7990}} in significant ways:
 
-- It changes the phrase "xml2rfc version 3" to "RFCXML".
 - It defines four terms that replace the use of the term "canonical" and clarifies "format":
     - The "definitive format", which is RFCXML
     - The "definitive version", which is a published RFC in the definitive format
@@ -92,8 +91,7 @@ This document changes {{RFC7990}} in significant ways:
 - It defines a policy governing how the RFCXML format changes.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
-- It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center (RPC)"
-- It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text
+- It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text.
 
 When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from RFC 7990:
 
@@ -104,6 +102,10 @@ and
 > At the highest level, the changes being made to the RFC format involve breaking away from solely ASCII plain text and moving to a canonical format that includes all the information required for rendering a document into a wide variety of publication formats.
 
 This document uses two terms, "definitive version" and "definitive format", for the earlier term "canonical format".
+
+Other terminology changes made by this document are the following:
+- It changes the phrase "xml2rfc version 3" to "RFCXML".
+- It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center (RPC)".
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
 
