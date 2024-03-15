@@ -70,7 +70,7 @@ This document is concerned with the production of RFCs, focusing on the publishe
 It does not address any changes to the processes each stream uses to develop and review their submissions (specifically, how Internet-Drafts will be developed).
 While I-Ds have a similar set of issues and concerns, directly addressing those issues for I-Ds will be discussed within each document stream.
 
-The details described in this document are expected to continue to change over time as the community and the RPC gains further experience with the components of the framework.
+The details described in this document are expected to continue to change over time as the community and the RFC Production Center (RPC) gains further experience with the components of the framework.
 
 Implementors of those components are advised to avoid assuming that all such changes will be backwards-compatible.
 
@@ -94,7 +94,7 @@ This document changes {{RFC7990}} in significant ways:
 and by dropping the requirement that the XML be embedded in the PDF publication version.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
-- It changes the name of the body that publishes RFCs from "RFC Editor" to "RPC"
+- It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center (RPC)"
 - It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text
 
 When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from RFC 7990:
