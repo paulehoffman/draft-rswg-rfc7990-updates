@@ -97,7 +97,7 @@ and by dropping the requirement that the XML be embedded in the PDF publication 
 - It changes the name of the body that publishes RFCs from "RFC Editor" to "RPC"
 - It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text
 
-When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from 7990:
+When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from RFC 7990:
 
 > Canonical format: the authorized, recognized, accepted, and archived version of the document
 
@@ -165,7 +165,7 @@ Such changes will seek to preserve the semantics expressed in the original RFC w
 Reasons for such changes include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
 The RPC will keep a public record of when it re-issues any RFC, and give a short description of its reasoning for each change.
 
-## Expected Updates to XMLRFC
+## Expected Updates to RFCXML
 
 It is anticipated that the syntax and semantics in {{RFC7991}} will be updated.
 Updates to the RFCXML specification that are applied to existing RFCs should preserve to the greatest extent possible the semantics expressed in the original RFC.
@@ -248,7 +248,7 @@ The RPC is expected to identify, track, and actively mitigate risks introduced b
 
 Martin Thomson wrote a great deal of the significant text here as part of draft-thomson-rswg-syntax-change.
 
-This document has greatly benefitted from the input or the RSWG.
+This document has greatly benefited from the input of the RSWG.
 In particular,
 Alexis Rossi,
 Brian Carpenter,
