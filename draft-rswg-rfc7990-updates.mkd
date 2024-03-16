@@ -64,6 +64,7 @@ Issues can be raised there, but probably should be on the mailing list instead.
 
 "RFC Series Format Requirements and Future Development" {{RFC6949}} discussed the need to improve the display of items such as author names and artwork in RFCs as well as the need to improve the ability of RFCs to be displayed properly on various devices.
 Based on the discussions with communities of interest, such as the IETF, the RFC Series Editor decided to explore a change to the format of the Series.
+{{RFC7990}} was the culmination of that exploration.
 This document serves as the framework that describes the problems that were solved and summarizes the documents created to date that capture the specific requirements for each aspect of the change in format.
 
 This document is concerned with the production of RFCs, focusing on the published documents.
