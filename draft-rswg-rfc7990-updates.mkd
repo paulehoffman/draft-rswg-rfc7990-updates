@@ -204,14 +204,14 @@ The JavaScript in the HTML may add text that provides post-publication metadata 
 
 ## PDF
 
-{{RFC7995}} describes the different versions of PDF is offered, with a recommendation of what PDF standard should apply to RFCs.
+{{RFC7995}} describes the different standards of PDF, with a recommendation of which PDF standard should apply to RFCs.
 
 The PDF file is rendered from the XML file or from the HTML publication version; it is not derived from the plain-text publication version.
 
 The PDF publication version conforms to the PDF standard.
 The RPC can decide which PDF standard will be supported after consultation with the community.
 
-This document updates {{RFC7995}} and {{RFC8153}} by changing the requirement from the RPC use PDF/A-3 standard to instead using the PDF/A standard,
+This document updates {{RFC7995}} and {{RFC8153}} by changing the requirement from using the PDF/A-3 standard to instead using the PDF/A standard
 and by dropping the requirement that the XML be embedded in the PDF publication version.
 Other parts of {{RFC8153}}, particularly the need to archive metadata about RFCs, are not changed.
 
