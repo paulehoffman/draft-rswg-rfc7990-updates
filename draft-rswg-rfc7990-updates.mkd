@@ -1,7 +1,7 @@
 ---
 title: Updated RFC Format Framework
 abbrev: Format Framework
-docname: draft-rswg-rfc7990-updates-pre07
+docname: draft-rswg-rfc7990-updates-07
 
 stand_alone: true
 v: 3
@@ -43,7 +43,7 @@ In order to improve the readability of RFCs while supporting their archivability
 This document is the framework that provides the problem statement, lays out a road map of the documents that capture the specific requirements, and describes how RFCs are published.
 
 This document obsoletes RFC 7990 and makes many significant changes to that document.
-It also updates the stability policy in RFC 9280.
+This document also updates the stability policy in RFC 9280.
 
 This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
 There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
