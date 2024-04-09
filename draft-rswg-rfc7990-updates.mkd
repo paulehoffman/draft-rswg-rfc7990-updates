@@ -86,7 +86,6 @@ This document changes {{RFC7990}} in significant ways:
 - It defines a policy governing how the RFCXML format changes.
 - It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
 - It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
-- It changes the use of JavaScript in HTML to be fully supported as long as it doesn't change the text.
 
 When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from RFC 7990:
 
