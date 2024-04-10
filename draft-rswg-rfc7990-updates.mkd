@@ -142,7 +142,7 @@ The RPC may change the definitive version of an RFC over time (that is, change t
 See {{RFC7991}} for the original complete description of the RFCXML syntax and semantics.
 
 The XML may contain SVG line art, as originally described in {{RFC7996}}.
-That SVG will also appear in the HTML and PDF publication versions.
+That SVG will also appear in the HTML publication versions.
 The XML may contain non-ASCII characters, as originally described in {{RFC7997}}.
 These characters will appear in all the publication versions.
 
