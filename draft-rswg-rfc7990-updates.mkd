@@ -26,16 +26,16 @@ author:
    email: hlf@sphericalcowconsulting.com
 
 normative:
-  RFC7990:
   RFC7991:
   RFC7996:
   RFC7997:
+  RFC9280:
 
 informative:
   RFC20:
   RFC6949:
+  RFC7990:
   RFC8650:
-  RFC9280:
 
 --- abstract
 
