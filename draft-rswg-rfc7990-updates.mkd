@@ -26,31 +26,25 @@ author:
    email: hlf@sphericalcowconsulting.com
 
 normative:
-  RFC7990:
   RFC7991:
   RFC7996:
   RFC7997:
+  RFC9280:
 
 informative:
   RFC20:
   RFC6949:
+  RFC7990:
   RFC8650:
-  RFC9280:
 
 --- abstract
 
 In order to improve the readability of RFCs while supporting their archivability, the definitive version of the RFC Series transitioned from plain-text ASCII to XML using the RFCXML vocabulary; different publication versions are rendered from that base document.
-This document is the framework that provides the problem statement, lays out a road map of the documents that capture the specific requirements, and describes how RFCs are published.
+This document describes how RFCs are published.
 
 This document obsoletes RFC 7990.
 This document also updates the stability policy in RFC 9280.
 
-This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
-There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
-
-<!-- PENDING ISSUES 
-
--->
 
 --- middle
 
@@ -59,7 +53,6 @@ There is a repository for this draft at <https://github.com/paulehoffman/draft-r
 "RFC Series Format Requirements and Future Development" {{RFC6949}} discussed the need to improve the display of items such as author names and artwork in RFCs as well as the need to improve the ability of RFCs to be displayed properly on various devices.
 Based on the discussions with communities of interest, such as the IETF, the RFC Series Editor decided to explore a change to the format of the Series.
 {{RFC7990}} was the culmination of that exploration.
-This document serves as the framework that describes the problems that were solved and summarizes the documents created to date that capture the specific requirements for each aspect of the change in format.
 
 This document is concerned with the production of RFCs, focusing on the published documents.
 It does not address any changes to the processes each stream uses to develop and review their submissions (specifically, how Internet-Drafts will be developed).
@@ -102,6 +95,8 @@ Other terminology changes made by this document are the following:
 - It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center (RPC)".
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
+Text from {{RFC7990}} that repeated what was in other RFCs, particularly Section 8 (Figures and Artwork) and Section 9 (Content and Page Layout) were also removed.
+
 
 ## Changes to RFC 9280 {#changes-to-9280}
 
