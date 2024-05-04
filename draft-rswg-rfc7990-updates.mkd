@@ -1,7 +1,7 @@
 ---
 title: Updated RFC Format Framework
 abbrev: Format Framework
-docname: draft-rswg-rfc7990-updates-09
+docname: draft-rswg-rfc7990-updates-10
 
 stand_alone: true
 v: 3
@@ -58,7 +58,7 @@ This document is concerned with the production of RFCs, focusing on the publishe
 It does not address any changes to the processes each stream uses to develop and review their submissions (specifically, how Internet-Drafts will be developed).
 While I-Ds have a similar set of issues and concerns, directly addressing those issues for I-Ds will be discussed within each document stream.
 
-The details described in this document are expected to continue to change over time as the community and the RFC Production Center (RPC) gains further experience with the components of the framework.
+The details described in this document are expected to continue to change over time as the community and the RFC Production Center (RPC) gains further experience implementing the policies described here.
 
 Implementors of those components are advised to avoid assuming that all such changes will be backwards-compatible.
 
