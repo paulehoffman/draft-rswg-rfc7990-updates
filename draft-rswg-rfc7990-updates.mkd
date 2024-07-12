@@ -151,7 +151,7 @@ It  does not contain comments or processing instructions.
 
 RFCs may be re-issued, as described in {{changes-to-9280}}.
 Such changes will seek to preserve the semantics expressed in the original RFC.
-Reasons for such changes include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
+Reasons for such changes include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive version of the RFC.
 The RPC will keep a public record of when it re-issues any RFC, and give a short description of its reasoning for each change.
 
 ## Expected Updates to RFCXML
