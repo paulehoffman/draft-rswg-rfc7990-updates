@@ -134,7 +134,7 @@ The publication formats are described in {{pub-versions}} and fully specified in
 
 The definitive version produced by the RPC is the version that holds all the information intended for an RFC.
 The RPC may change the definitive version of an RFC over time (that is, change the XML file), as described in {{updating}}.
-See {{RFC7991}} for the original complete description of the RFCXML syntax and semantics.
+See {{RFC7991}} for the original complete description of RFCXML.
 
 The XML may contain SVG line art, as originally described in {{RFC7996}}.
 That SVG will also appear in the HTML publication versions.
@@ -156,7 +156,7 @@ The RPC will keep a public record of when it re-issues any RFC, and give a short
 
 ## Expected Updates to RFCXML
 
-It is anticipated that the syntax and semantics in {{RFC7991}} will be updated.
+It is anticipated that {{RFC7991}} will be updated.
 Updates to the RFCXML specification that are applied to existing RFCs should preserve to the greatest extent possible the semantics expressed in the original RFC.
 The goal of limiting changes only to syntax is to preserve the semantic meaning encoded in the published document.
 
