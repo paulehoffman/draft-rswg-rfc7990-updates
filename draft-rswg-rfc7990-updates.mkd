@@ -1,7 +1,7 @@
 ---
 title: RFC Formats and Versions
 abbrev: RFC Formats and Versions
-docname: draft-rswg-rfc7990-updates-10
+docname: draft-rswg-rfc7990-updates-11
 
 stand_alone: true
 v: 3
@@ -35,7 +35,7 @@ informative:
   RFC20:
   RFC6949:
   RFC7990:
-  RFC8650:
+  RFC8651:
 
 --- abstract
 
@@ -106,7 +106,7 @@ Section 7.6 of {{RFC9280}} currently says:
 
 This document replaces that sentence with:
 
-> Once published, RFC Series documents may be re-issued, but the semantic content of published documents shall be preserved to the greatest extent possible.
+> Once published, RFCs may be re-issued, but the semantic content of publication versions shall be preserved to the greatest extent possible.
 
 This document also creates a new policy that would exist in Section 7 of {{RFC9280}}:
 
@@ -119,7 +119,7 @@ RFCs are copyedited, formatted, published, and may be reissued to maintain a con
 
 ## Key Changes from the Earlier RFC Process
 
-The first RFC to be published following the guidance of the group of RFCs described in {{RFC7990}} was {{RFC8650}}, published in November 2019.
+The first RFC to be published following the guidance of the group of RFCs described in {{RFC7990}} was {{RFC8651}}, published in October 2019.
 In the time since then, all published RFCs have followed the general plan from {{RFC7990}}.
 
 At the highest level, the changes that {{RFC7990}} made to the RFC format involved breaking away from solely ASCII ({{RFC20}}) plain text and moving to a definitive format that includes all the information required for rendering a document into a wide variety of publication formats.
@@ -134,14 +134,14 @@ The publication formats are described in {{pub-versions}} and fully specified in
 
 The definitive version produced by the RPC is the version that holds all the information intended for an RFC.
 The RPC may change the definitive version of an RFC over time (that is, change the XML file), as described in {{updating}}.
-See {{RFC7991}} for the original complete description of the RFCXML syntax and semantics.
+See {{RFC7991}} for the original complete description of RFCXML.
 
 The XML may contain SVG line art, as originally described in {{RFC7996}}.
 That SVG will also appear in the HTML publication versions.
 The XML may contain non-ASCII characters, as originally described in {{RFC7997}}.
 These characters will appear in all the publication versions.
 
-The published XML file must contain all information necessary to render the specified publication versions; any question about what was intended in the publication will be answered from this file.
+The definitive version must contain all information necessary to render the specified publication versions; any question about what was intended in the publication will be answered from this file.
 It is self-contained with all the information known at publication time.
 For instance, all features that reference externally defined input are expanded.
 It does not contain src attributes for &lt;artwork> or &lt;sourcecode> elements.
@@ -151,12 +151,12 @@ It  does not contain comments or processing instructions.
 
 RFCs may be re-issued, as described in {{changes-to-9280}}.
 Such changes will seek to preserve the semantics expressed in the original RFC.
-Reasons for such changes include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive XML version of the RFC.
+Reasons for such changes include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive version of the RFC.
 The RPC will keep a public record of when it re-issues any RFC, and give a short description of its reasoning for each change.
 
 ## Expected Updates to RFCXML
 
-It is anticipated that the syntax and semantics in {{RFC7991}} will be updated.
+It is anticipated that {{RFC7991}} will be updated.
 Updates to the RFCXML specification that are applied to existing RFCs should preserve to the greatest extent possible the semantics expressed in the original RFC.
 The goal of limiting changes only to syntax is to preserve the semantic meaning encoded in the published document.
 
@@ -176,10 +176,10 @@ Similarly, as production tools change, publication versions may be regenerated t
 # Archived Documents
 
 The RPC will keep an archived set of all definitive versions of RFCs as well as archived sets of the publication versions for an RFC that were previously published.
-These archived sets must be available using the same access methods as for the XML and the published publication versions.
-Every archived set shall record the date that a document was created or revised.
+These archived sets must be available using the same access methods as for current definitive and publication versions.
+Every archived set shall record the date that a definitive and/or publication version was created or reissued.
 
-When the RPC archives documents, it does so in a manner that allows them to be found by people who want the historical (as compared to current) versions of those files.
+When the RPC archives definitive and publication versions, it does so in a manner that allows them to be found by people who want the historical (as compared to current) files.
 
 This document does not specify how archives are maintained or how archived documents might be located or identified.
 The methods for storage and access will be determined by the RPC in consultation with the technical community.
