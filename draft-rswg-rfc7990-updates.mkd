@@ -141,7 +141,7 @@ That SVG will also appear in the HTML publication versions.
 The XML may contain non-ASCII characters, as originally described in {{RFC7997}}.
 These characters will appear in all the publication versions.
 
-The published XML file must contain all information necessary to render the specified publication versions; any question about what was intended in the publication will be answered from this file.
+The definitive version must contain all information necessary to render the specified publication versions; any question about what was intended in the publication will be answered from this file.
 It is self-contained with all the information known at publication time.
 For instance, all features that reference externally defined input are expanded.
 It does not contain src attributes for &lt;artwork> or &lt;sourcecode> elements.
