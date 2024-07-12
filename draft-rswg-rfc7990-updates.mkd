@@ -176,7 +176,7 @@ Similarly, as production tools change, publication versions may be regenerated t
 # Archived Documents
 
 The RPC will keep an archived set of all definitive versions of RFCs as well as archived sets of the publication versions for an RFC that were previously published.
-These archived sets must be available using the same access methods as for the XML and the published publication versions.
+These archived sets must be available using the same access methods as for current definitive and publication versions.
 Every archived set shall record the date that a document was created or revised.
 
 When the RPC archives documents, it does so in a manner that allows them to be found by people who want the historical (as compared to current) versions of those files.
