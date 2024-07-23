@@ -77,8 +77,8 @@ This document changes {{RFC7990}} in significant ways:
     - A "publication format", which is currently one of PDF, plain text, or HTML
     - A "publication version", which is a published RFC in one of the publication formats
 - It defines a policy governing how the RFCXML format changes.
-- It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
-- It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
+- It defines a policy for when the definitive version of an RFC can be updated and older definitive versions archived.
+- It defines a policy for when the publication versions of an RFC can be updated and older publication versions archived.
 
 When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from RFC 7990:
 
@@ -132,7 +132,7 @@ The publication formats are described in {{pub-versions}} and fully specified in
 
 # Definitive Version of an RFC
 
-The definitive version produced by the RPC is the version that holds all the information intended for an RFC.
+The definitive version produced by the RPC is the publication version that holds all the information intended for an RFC.
 The RPC may change the definitive version of an RFC over time (that is, change the XML file), as described in {{updating}}.
 See {{RFC7991}} for the original complete description of RFCXML.
 
