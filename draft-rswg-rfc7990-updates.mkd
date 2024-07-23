@@ -56,7 +56,7 @@ Based on the discussions with communities of interest, such as the IETF, the RFC
 
 This document is concerned with the production of RFCs, focusing on the published documents.
 It does not address any changes to the processes each stream uses to develop and review their submissions (specifically, how Internet-Drafts will be developed).
-While I-Ds have a similar set of issues and concerns, directly addressing those issues for I-Ds will be discussed within each document stream.
+While I-Ds have a similar set of issues and concerns, directly addressing those issues for I-Ds should be discussed within each document stream.
 
 The details described in this document are expected to continue to change over time as the community and the RFC Production Center (RPC) gains further experience implementing the policies described here.
 
@@ -77,8 +77,8 @@ This document changes {{RFC7990}} in significant ways:
     - A "publication format", which is currently one of PDF, plain text, or HTML
     - A "publication version", which is a published RFC in one of the publication formats
 - It defines a policy governing how the RFCXML format changes.
-- It defines a policy for when the definitive version of an RFC can be updated and older versions archived.
-- It defines a policy for when the publication versions of an RFC can be updated and older versions archived.
+- It defines a policy for when the definitive version of an RFC can be updated and older definitive versions archived.
+- It defines a policy for when the publication versions of an RFC can be updated and older publication versions archived.
 
 When using the new terminology, it is important to note that {{RFC7990}} used the term "canonical format" to mean two very different things. Quoting from RFC 7990:
 
@@ -92,7 +92,7 @@ This document uses two terms, "definitive version" and "definitive format", for 
 
 Other terminology changes made by this document are the following:
 - It changes the phrase "xml2rfc version 3" to "RFCXML".
-- It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center (RPC)".
+- It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center" (RPC).
 
 Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
 Text from {{RFC7990}} that repeated what was in other RFCs, particularly Section 8 (Figures and Artwork) and Section 9 (Content and Page Layout) were also removed.
@@ -112,8 +112,7 @@ This document also creates a new policy that would exist in Section 7 of {{RFC92
 
 > 7.8.  Consistency
 > 
-> The series as a whole is consistently presented.
-RFCs are copyedited, formatted, published, and may be reissued to maintain a consistent presentation.
+> RFCs are copyedited, formatted, published, and may be reissued to maintain a consistent presentation.
 
 {{updating}} and {{pub-versions}} in this document are based on this updated policy in {{RFC9280}}.
 
@@ -122,7 +121,7 @@ RFCs are copyedited, formatted, published, and may be reissued to maintain a con
 The first RFC to be published following the guidance of the group of RFCs described in {{RFC7990}} was {{RFC8651}}, published in October 2019.
 In the time since then, all published RFCs have followed the general plan from {{RFC7990}}.
 
-At the highest level, the changes that {{RFC7990}} made to the RFC format involved breaking away from solely ASCII ({{RFC20}}) plain text and moving to a definitive format that includes all the information required for rendering a document into a wide variety of publication formats.
+At the highest level, the changes that {{RFC7990}} made to the RFC format involved breaking away from solely ASCII {{RFC20}} plain text and moving to a definitive format that includes all the information required for rendering a document into a wide variety of publication formats.
 The RPC became responsible for more than just the plain-text file and a PDF rendering that was created from the plain text at the time of publication; the RPC now creates the definitive version and three publication versions of the RFC in order to meet the diverse requirements of the community.
 
 The final RFCXML file produced by the RPC is the definitive version for RFCs; it holds all the information intended for an RFC.
@@ -132,7 +131,7 @@ The publication formats are described in {{pub-versions}} and fully specified in
 
 # Definitive Version of an RFC
 
-The definitive version produced by the RPC is the version that holds all the information intended for an RFC.
+The definitive version produced by the RPC is the publication version that holds all the information intended for an RFC.
 The RPC may change the definitive version of an RFC over time (that is, change the XML file), as described in {{updating}}.
 See {{RFC7991}} for the original complete description of RFCXML.
 
@@ -142,7 +141,7 @@ The XML may contain non-ASCII characters, as originally described in {{RFC7997}}
 These characters will appear in all the publication versions.
 
 The definitive version must contain all information necessary to render the specified publication versions; any question about what was intended in the publication will be answered from this file.
-It is self-contained with all the information known at publication time.
+It is self-contained with all the semantic content known at publication time.
 For instance, all features that reference externally defined input are expanded.
 It does not contain src attributes for &lt;artwork> or &lt;sourcecode> elements.
 It  does not contain comments or processing instructions.
