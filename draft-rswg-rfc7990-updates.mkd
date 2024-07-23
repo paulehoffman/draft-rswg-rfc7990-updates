@@ -112,8 +112,7 @@ This document also creates a new policy that would exist in Section 7 of {{RFC92
 
 > 7.8.  Consistency
 > 
-> The series as a whole is consistently presented.
-RFCs are copyedited, formatted, published, and may be reissued to maintain a consistent presentation.
+> RFCs are copyedited, formatted, published, and may be reissued to maintain a consistent presentation.
 
 {{updating}} and {{pub-versions}} in this document are based on this updated policy in {{RFC9280}}.
 
