@@ -94,7 +94,7 @@ Other terminology changes made by this document are the following:
 - It changes the phrase "xml2rfc version 3" to "RFCXML".
 - It changes the name of the body that publishes RFCs from "RFC Editor" to "RFC Production Center" (RPC).
 
-Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") are not copied to this document.
+Historical text from {{RFC7990}} such as Section 2 ("Problem Statement"), Section 4 ("Overview of the Decision-Making Process"), and Section 10 ("Transition Plan") were purposely omitted from this document.
 Text from {{RFC7990}} that repeated what was in other RFCs, particularly Section 8 (Figures and Artwork) and Section 9 (Content and Page Layout) were also removed.
 
 
