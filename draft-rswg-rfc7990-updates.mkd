@@ -1,7 +1,7 @@
 ---
 title: RFC Formats and Versions
 abbrev: RFC Formats and Versions
-docname: draft-rswg-rfc7990-updates-11
+docname: draft-rswg-rfc7990-updates-12
 
 stand_alone: true
 v: 3
@@ -149,8 +149,8 @@ It  does not contain comments or processing instructions.
 ## Updating the Definitive Version of an RFC {#updating}
 
 RFCs may be re-issued, as described in {{changes-to-9280}}.
-Such changes must preserve the semantics expressed in the original RFC; changes that result in a change in implementing the specification described in an RFC, for example, must be avoided.
-Reasons for such changes include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive version of the RFC.
+Such changes must preserve the semantics expressed in the original RFC.
+Reasons to make such changes include updates to the RFCXML schema, errors discovered in the XML, and changes to the tooling used to generate the publication versions of the definitive version of the RFC.
 The RPC will keep a public record of when it re-issues any RFC, and give a short description of its reasoning for each change.
 
 ## Expected Updates to RFCXML
